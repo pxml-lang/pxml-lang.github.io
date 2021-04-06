@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PXML Syntax EBNF</title> 
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="en-us">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="practicalXML - XML for humans.">
+		<meta name="keywords" content="practicalXML, PXML, XML">
+
+		<link rel="stylesheet" href="../../css/pxml.css">
+		<link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+
+ 
+
+	</head>
+
+	<body>
+		<script>
+			window.onload = function() {
+				const path = window.location.pathname;
+				// console.log ( path );
+				var tab_name = "none";
+				if ( path.includes ( "/about" ) ) {
+					tab_name = "about";
+				} else if ( path.includes ( "/docs" ) ) {
+					tab_name = "docs";
+				} else if ( path.includes ( "/downloads" ) ) {
+					tab_name = "downloads";
+				} else if ( path.includes ( "/help" ) ) {
+					tab_name = "help";
+				}
+				if ( tab_name !== "none" ) {
+					document.getElementById(tab_name).style.background = "lightgrey";
+				}
+			};
+		</script>
+
+		<div id="left_margin"></div>
+		
+		<div id="page">
+		
+			<a href="../../index.html" class="no_link_decoration">
+			<div id="header">
+				<div id="header_name">PracticalXML (PXML)</div>
+				<div id="header_slogan">XML for humans</div>
+			</div>
+			</a>
+
+			<div id="menu">
+				<div class="menu-item" id="about">
+					<a href="../../about/faq.html" class="menu-link">About</a>
+				</div>
+				<div class="menu-item" id="docs">
+					<a href="../../docs/index.html" class="menu-link">Docs</a>
+				</div>
+				<div class="menu-item" id="downloads">
+					<a href="../../downloads/index.html" class="menu-link">Downloads</a>
+				</div>
+				<div class="menu-item" id="help">
+					<a href="../../help/index.html" class="menu-link">Help</a>
+				</div>
+			</div>
+
+			<div id="menu_content_separator"></div>
+
+			<div id="content">
+
+				<h2>PXML Syntax EBNF</h2>
+
+                <p>The following table specifies PXML's basic syntax. Extensions like namespaces, metadata, etc. are not included.</p>
+
+                <p>The syntax is also specified as <a href="railroad-diagrams.html">Railroad Diagrams</a>.</p>
+                
+                <table class="ebnf-table">
+                    <thead>
+                        <tr><th>Name</th><th></th><th>Rule</th><th>Examples</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>element</td>           <td>::=</td> <td>&nbsp;&nbsp;empty_element<br />| non_empty_element</td><td></td></tr>
+                        <tr><td>empty_element</td>     <td>::=</td> <td>"[" name "]"</td><td>[map]</td></tr>
+                        <tr><td>non_empty_element</td> <td>::=</td> <td>"[" name " " value "]"</td><td>[teacher Bob]<br />[div A [i nice] dog]</td></tr>
+                        <tr><td>name</td>              <td>::=</td> <td>regex:<br />[a-zA-Z][a-zA-Z0-9-_.]*</td><td>index<br />Index_12<br />INDEX_12.5-a</td></tr>
+                        <tr><td>value</td>             <td>::=</td> <td>( text | element ) +</td><td>Tree<br />[list]<br />[color orange]<br />All is [i [b very] well]!</td></tr>
+                        <tr><td>text</td>              <td>::=</td> <td>character +</td><td>abc<br />3.14<br />config.\["port"\]</td></tr>
+                        <tr><td>character</td>         <td>::=</td> <td>&nbsp;&nbsp;any Unicode character,<br />&nbsp;&nbsp;except "[", "]", and "\"<br />| "\["<br />| "\]"<br />| "\\"<br />| "\u" hex hex hex hex</td><td>a<br />é<br />\[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;([)<br />\]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(])<br />\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(\)<br />\u002A&nbsp;&nbsp;&nbsp;&nbsp;(*)</td></tr>
+                        <tr><td>hex</td>               <td>::=</td> <td>regex:<br />[0-9a-fA-F]</td><td>1<br />a<br />F</td></tr>
+                    </tbody>
+                </table>
+
+                <blockquote>
+                    <p>Note:</p>
+                    <p>A PXML <code>name</code> must follow the same rules as an XML name. The above regex (<code>[a-zA-Z][a-zA-Z0-9-_.]*</code>) is a simplified version of the <a href="https://www.w3.org/TR/REC-xml/#NT-NameStartChar">authoritative rules for XML names</a>. A simple description of the rules can be found in chapter "XML Naming Rules" of <a href="https://www.w3schools.com/xml/xml_elements.asp">XML Elements</a>.</p>
+                </blockquote>
+
+                <p>As can be seen from the above rules, PXML's basic grammar is very simple. This makes it easy to write a basic parser in any programming language.</p>
+
+                <p>A PXML document is a tree of nodes. Each node has a name, and an optional ordered list of texts (leaf nodes) and/or child-nodes (branch nodes). This simple structure allows to store any dataset of any complexity, such as maps (key/value pairs), simple or complex configuration data, markup code (styled text), tables, databases, etc.</p>
+			</div>
+
+			
+			<div id="footer"></div>
+		
+		</div>
+		
+		<div id="right_margin"></div>
+	</body>
+</html>

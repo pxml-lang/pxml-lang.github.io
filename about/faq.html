@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PracticalXML FAQ</title> 
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="en-us">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="practicalXML - XML for humans.">
+		<meta name="keywords" content="practicalXML, PXML, XML">
+
+		<link rel="stylesheet" href="../css/pxml.css">
+		<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+ 
+
+	</head>
+
+	<body>
+		<script>
+			window.onload = function() {
+				const path = window.location.pathname;
+				// console.log ( path );
+				var tab_name = "none";
+				if ( path.includes ( "/about" ) ) {
+					tab_name = "about";
+				} else if ( path.includes ( "/docs" ) ) {
+					tab_name = "docs";
+				} else if ( path.includes ( "/downloads" ) ) {
+					tab_name = "downloads";
+				} else if ( path.includes ( "/help" ) ) {
+					tab_name = "help";
+				}
+				if ( tab_name !== "none" ) {
+					document.getElementById(tab_name).style.background = "lightgrey";
+				}
+			};
+		</script>
+
+		<div id="left_margin"></div>
+		
+		<div id="page">
+		
+			<a href="../index.html" class="no_link_decoration">
+			<div id="header">
+				<div id="header_name">PracticalXML (PXML)</div>
+				<div id="header_slogan">XML for humans</div>
+			</div>
+			</a>
+
+			<div id="menu">
+				<div class="menu-item" id="about">
+					<a href="../about/faq.html" class="menu-link">About</a>
+				</div>
+				<div class="menu-item" id="docs">
+					<a href="../docs/index.html" class="menu-link">Docs</a>
+				</div>
+				<div class="menu-item" id="downloads">
+					<a href="../downloads/index.html" class="menu-link">Downloads</a>
+				</div>
+				<div class="menu-item" id="help">
+					<a href="../help/index.html" class="menu-link">Help</a>
+				</div>
+			</div>
+
+			<div id="menu_content_separator"></div>
+
+
+			<div id="content">
+
+<h2>FAQ (Frequently Asked Questions)</h2>
+
+<p><a href="#what">What is PXML?</a></p>
+<p><a href="#why">Why PXML?</a></p>
+<p><a href="#how">How does it work?</a></p>
+<p><a href="#examples">Can I see some examples?</a></p>
+<p><a href="#usage">What can I do with PXML?</a></p>
+<p><a href="#implementation">Is there a parser for PXML?</a></p>
+<p><a href="#editor_plugins">Are there editor plugins for PXML?</a></p>
+<p><a href="#maturity">How mature is PXML?</a></p>
+<p><a href="#cost">Do I have to pay to use PXML?</a></p>
+<p><a href="#license">Which license is used?</a></p>
+<p><a href="#creator">Who created PXML?</a></p>
+
+
+<a id="faq_start"></a>
+
+
+<br />
+<a name="what"></a> 
+<h3>What is PXML?</h3>
+<p>PracticalXML (PXML) is an alternative, human-friendly syntax to describe XML documents.</p>
+<p>Any document written in XML (including XHTML pages) can also be written in PXML. XML technology can be used with PXML documents. For example you can validate, query, modify, or transform a document.</p>
+
+
+
+<br />
+<a name="why"></a> 
+<h3>Why PXML?</h3>
+<p>XML is notoriously verbose, and cumbersome to read and write for humans. PXML has been designed to provide a simpler, more human-friendly syntax that is easy to read and write.</p>
+<p>For an elaborated discussion of the rationale for PXML, please read: <a href="../docs/articles/suggestion-for-better-xml-html/index.html" target="_blank">Suggestion For a Better XML/HTML Syntax</a>.</p>
+
+
+
+<br />
+<a name="how"></a> 
+<h3>How does it work?</h3>
+
+<p>Instead of writing:</p>
+<pre class="code_block">&lt;name&gt;value&lt;/name&gt;</pre>
+<p>... you write:</p>
+<pre class="code_block">[name value]</pre>
+
+<p>And this:</p>
+<pre class="code_block">name = value</pre>
+<p>... is written as:</p>
+<pre class="code_block">[#name value]</pre>
+
+<p>That's it.</p>
+
+<p>The following picture illustrates how XML documents are written in PXML:</p>
+<img src="n_v.png" width="400" alt="From XML to PXML" style="border: 1px black solid;" />
+
+<p>The basic syntax is specified as <a href="../docs/syntax/ebnf.html">EBNF</a> and as <a href="../docs/syntax/railroad-diagrams.html">railroad diagrams</a></p>
+
+
+
+
+<br />
+<a name="examples"></a> 
+<h3>Can I see some examples?</h3>
+
+<p>Here is an example of a simple HTML snippet:</p>
+    
+<pre class="code_block">&lt;section&gt;
+    &lt;h2&gt;Harmonic States&lt;/h2&gt;
+
+    &lt;p&gt;The &lt;i&gt;initial&lt;/i&gt; state looks like this:&lt;/p&gt;
+    &lt;img src=&quot;images/state_1.png&quot; /&gt;
+
+    &lt;p&gt;After just a few &lt;i&gt;&lt;b&gt;micro&lt;/b&gt;seconds&lt;/i&gt; the state changes.&lt;/p&gt;
+    
+    &lt;p&gt;More text ...&lt;/p&gt;
+&lt;/section&gt;</pre>
+
+<p>The same code looks like this in PXML:</p>
+    
+    <pre class="code_block">[section
+    [h2 Harmonic States]
+
+    [p The [i initial] state looks like this:]
+    [img [#src images/state_1.png]]
+
+    [p After just a few [i [b micro]seconds] the state changes.]
+    
+    [p More text ...]
+]</pre>
+
+<!-- TODO
+<p>More examples can be found in the articles <a href="../docs/articles/suggestion-for-better-xml-html/index.html" target="_blank">Suggestion For a Better XML/HTML Syntax</a> and <a href="../docs/articles/open-source-pxml-parser/index.html" target="_blank">Open-Source Parser For PXML</a>.</p>
+-->
+
+<p>More examples can be found in the article <a href="../docs/articles/suggestion-for-better-xml-html/index.html" target="_blank">Suggestion For a Better XML/HTML Syntax</a>.</p>
+
+
+
+<br />
+<a name="usage"></a> 
+<h3>What can I do with PXML?</h3>
+<p>Everything you can do with XML, you can also do with PXML. It's just the syntax that is different.</p>
+<p>You can store data of any kind in a PXML document. For example, you can use PXML to store:</p>
+<ul>
+    <li>maps (key/value pairs)</li>
+    <li>simple or complex configuration data</li>
+    <li>markup code (styled text)</li>
+    <li>tables</li>
+    <li>databases</li>
+</ul>
+<p>PXML can be converted to XML, and vice-versa.</p>
+<p>After reading a PXML document into an XML structure, all powerful XML extensions can be applied. For example you can:</p>
+<ul>
+    <li>validate a document with <a href="https://www.w3schools.com/xml/schema_intro.asp">XML Schema</a></li>
+    <li>query a document with <a href="https://www.w3schools.com/xml/xquery_intro.asp">XML Query</a></li>
+    <li>change the document (add, remove, and modify nodes)</li>
+    <li>transform a document with <a href="https://www.w3schools.com/xml/xsl_intro.asp">XSLT</a></li>
+    <li>write a modified version back to PXML</li>
+</ul>
+
+
+
+<br />
+<a name="implementation"></a> 
+<h3>Is there a parser for PXML?</h3>
+
+<!-- TODO
+<p>Yes.</p>
+<p>There is a free, open-source reference implementation written in Java. The MIT-licensed source code is available on Github.</p>
+<p>For more information please read: <a href="../docs/articles/open-source-pxml-parser/index.html" target="_blank">Open-Source Parser For PXML</a>.</p>
+<p>Parsers in other programming languages are welcomed to be published on this site.</p>
+-->
+
+<p>Not yet, but soon (May 2021).</p>
+<p>There will be a free, open-source reference implementation written in Java. The MIT-licensed source code will be available on Github.</p>
+<p>Parsers in other programming languages are welcomed to be published on this site.</p>
+
+
+<br />
+<a name="editor_plugins"></a> 
+<h3>Are there editor plugins for PXML?</h3>
+<p>No. Not yet.</p>
+<p>The basic PXML <a href="../docs/syntax/ebnf.html">syntax</a> is very simple. Therefore it's easy to create editor plugins for PXML.</p>
+<p>Contributions are welcomed to be published on this site.</p>
+
+
+
+<br />
+<a name="maturity"></a> 
+<h3>How mature is PXML?</h3>
+<p>PXML is a work in progress.</p>
+<p>It's not yet used in any real-life enterprise project (as far as I know).</p>
+
+
+
+<br />
+<a name="cost"></a> 
+<h3>Do I have to pay to use PXML?</h3>
+<p>No.</p>
+<p>PXML is free of charge for everybody.</p>
+
+
+
+<br />
+<a name="license"></a> 
+<h3>Which license is used?</h3>
+<p>PXML, as well as the parser are licensed under the MIT license.</p>
+
+
+
+<br />
+<a name="creator"></a> 
+<h3>Who created PXML?</h3>
+<img src="christian_150_150.jpg" />
+<p>Hello. My name is Christian Neumanns, born in Luxembourg, Europe.</p>
+<p>I am a curious software developer, a zealous simplifier, and a lifelong student of life. I care about creating reliable and maintainable software that is easy to use.</p>
+<p>Besides PXML, I created:</p>
+<ul>
+    <li>
+        <p><a href="https://www.pml-lang.dev">Practical Markup Language</a> (PML): a markup language designed to create web articles and books. PML uses the PXML syntax. A free, open-source <i>PML-to-HTML-Converter</i> converts PML to HTML.</p>
+    </li>
+    <li>
+        <p><a href="https://www.ppl-lang.dev">Practical Programming Language</a> (PPL): a programming language designed to create reliable and maintainable code. The <i>PML-to-HTML-Converter</i> is written in PPL, but PPL is not ready yet for mission critical enterprise applications.</p>
+    </li>
+</ul>
+<p>You can have a look at my <a href="https://www.ppl-lang.dev/blog/index.html">blog</a> or contact me at chris {at} pml-lang {dot} dev.</p>
+
+			</div>
+
+			
+			<div id="footer"></div>
+		
+		</div>
+		
+		<div id="right_margin"></div>
+	</body>
+</html>

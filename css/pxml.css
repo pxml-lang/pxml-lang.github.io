@@ -10,7 +10,7 @@ body {
     flex-direction: row;
 
 	background-color: #f0f0f0;
-	font-family: Verdana, sans-serif;
+    font-family: Verdana, "Open Sans", sans-serif;
 	/* font-size: 16px; */
 }
 
@@ -29,8 +29,8 @@ body {
     flex-direction: column;
     */
 
-	width: 800px;
-	max-width: 800px;
+	width: 960px;
+	max-width: 960px;
 
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -138,4 +138,44 @@ body {
 
 .pml-attribute {
     color: purple;
+}
+
+.code_block {
+    background: #F8F8F8;
+    border-radius: 1em;
+    padding:1em;
+
+    font-family: Consolas, "DejaVu Sans Mono", monospace;
+    /* font-size: 1.2em; */
+}
+
+code {
+    background: #F8F8F8;
+    border-radius: 0.5em;
+    padding:0.2em;
+
+    font-family: Consolas, "DejaVu Sans Mono", monospace;
+    /* font-size: 1.2em; */
+}
+
+.ebnf-table {
+    /* font-family: Courier New; */
+    font-family: Consolas, "DejaVu Sans Mono", monospace;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+.ebnf-table tr {
+    /* vertical-align: top; */
+}
+
+.ebnf-table th {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+}
+
+.ebnf-table td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    vertical-align: top;
 }
