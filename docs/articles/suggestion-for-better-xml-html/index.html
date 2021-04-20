@@ -18,71 +18,76 @@
                     <nav class="pml-toc">
                         <h2 class="pml-toc-title">Table of Contents</h2>
                         <div class="pml-toc-tree" id="TOCTree">
-                            <li class="pml-toc-leaf-node"><a href="#ch__1">Introduction</a></li>
-                            <li class="pml-toc-branch-node">
-                                <details>
-                                    <summary><a href="#ch__2">Existing Alternatives</a></summary>
-                                    <ul>
-                                        <li class="pml-toc-leaf-node"><a href="#JSON_alternative">JSON</a></li>
-                                        <li class="pml-toc-leaf-node"><a href="#ch__3">YAML</a></li>
-                                        <li class="pml-toc-leaf-node"><a href="#ch__4">Other</a></li>
-                                    </ul>
-                                </details>
-                            </li>
-                            <li class="pml-toc-branch-node">
-                                <details>
-                                    <summary><a href="#ch__5">New Syntax</a></summary>
-                                    <ul>
-                                        <li class="pml-toc-branch-node">
-                                            <details>
-                                                <summary><a href="#ch__6">Elements</a></summary>
-                                                <ul>
-                                                    <li class="pml-toc-leaf-node"><a href="#ch__7">Simple Element</a></li>
-                                                    <li class="pml-toc-leaf-node"><a href="#ch__8">Empty Element</a></li>
-                                                    <li class="pml-toc-leaf-node"><a href="#ch__9">Child Elements</a></li>
-                                                    <li class="pml-toc-leaf-node"><a href="#ch__10">Closing Tags</a></li>
-                                                    <li class="pml-toc-leaf-node"><a href="#name_rules">Naming Rules</a></li>
-                                                </ul>
-                                            </details>
-                                        </li>
-                                        <li class="pml-toc-branch-node">
-                                            <details>
-                                                <summary><a href="#ch__11">Meta Data</a></summary>
-                                                <ul>
-                                                    <li class="pml-toc-leaf-node"><a href="#XML_attributes">XML Attributes</a></li>
-                                                    <li class="pml-toc-leaf-node"><a href="#ch__12">Attributes in pXML?</a></li>
-                                                    <li class="pml-toc-leaf-node"><a href="#ch__13">Separation of Data And Metadata</a></li>
-                                                    <li class="pml-toc-leaf-node"><a href="#ch__14">Advantages</a></li>
-                                                    <li class="pml-toc-leaf-node"><a href="#ch__15">Disadvantages</a></li>
-                                                </ul>
-                                            </details>
-                                        </li>
-                                        <li class="pml-toc-leaf-node"><a href="#ch__16">Comments</a></li>
-                                        <li class="pml-toc-leaf-node"><a href="#ch__17">Other</a></li>
-                                    </ul>
-                                </details>
-                            </li>
-                            <li class="pml-toc-branch-node">
-                                <details>
-                                    <summary><a href="#ch__18">History</a></summary>
-                                    <ul>
-                                        <li class="pml-toc-leaf-node"><a href="#ch__19">pXML Predecessor</a></li>
-                                        <li class="pml-toc-leaf-node"><a href="#lenient_PML">Lenient Syntax in PML</a></li>
-                                    </ul>
-                                </details>
-                            </li>
-                            <li class="pml-toc-leaf-node"><a href="#ch__20">Implementation</a></li>
-                            <li class="pml-toc-branch-node">
-                                <details>
-                                    <summary><a href="#ch__21">Examples</a></summary>
-                                    <ul>
-                                        <li class="pml-toc-leaf-node"><a href="#ch__22">Simple Config File</a></li>
-                                        <li class="pml-toc-leaf-node"><a href="#ch__23">HTML Code</a></li>
-                                    </ul>
-                                </details>
-                            </li>
-                            <li class="pml-toc-leaf-node"><a href="#ch__24">Syntax Comparison</a></li>
-                            <li class="pml-toc-leaf-node"><a href="#ch__25">Summary And Conclusion</a></li>
+                            <ul>
+                                <li class="pml-toc-leaf-node"><a href="#ch__1">Introduction</a></li>
+                                <li class="pml-toc-branch-node">
+                                    <details>
+                                        <summary><a href="#ch__2">Existing Alternatives</a></summary>
+                                        <ul>
+                                            <li class="pml-toc-leaf-node"><a href="#JSON_alternative">JSON</a></li>
+                                            <li class="pml-toc-leaf-node"><a href="#ch__3">YAML</a></li>
+                                            <li class="pml-toc-leaf-node"><a href="#ch__4">Other</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li class="pml-toc-branch-node">
+                                    <details>
+                                        <summary><a href="#ch__5">New Syntax</a></summary>
+                                        <ul>
+                                            <li class="pml-toc-branch-node">
+                                                <details>
+                                                    <summary><a href="#ch__6">Elements</a></summary>
+                                                    <ul>
+                                                        <li class="pml-toc-leaf-node"><a href="#ch__7">Simple Element</a></li>
+                                                        <li class="pml-toc-leaf-node"><a href="#ch__8">Empty Element</a></li>
+                                                        <li class="pml-toc-leaf-node"><a href="#ch__9">Child Elements</a></li>
+                                                        <li class="pml-toc-leaf-node"><a href="#ch__10">Closing Tags</a></li>
+                                                        <li class="pml-toc-leaf-node"><a href="#name_rules">Name Rules</a></li>
+                                                        <li class="pml-toc-leaf-node"><a href="#node_escape_rules">Escape Rules</a></li>
+                                                    </ul>
+                                                </details>
+                                            </li>
+                                            <li class="pml-toc-branch-node">
+                                                <details>
+                                                    <summary><a href="#ch__11">Attributes</a></summary>
+                                                    <ul>
+                                                        <li class="pml-toc-leaf-node"><a href="#ch__12">Overview</a></li>
+                                                        <li class="pml-toc-leaf-node"><a href="#ch__13">Names</a></li>
+                                                        <li class="pml-toc-leaf-node"><a href="#ch__14">Values</a></li>
+                                                        <li class="pml-toc-leaf-node"><a href="#ch__15">Escape rules</a></li>
+                                                        <li class="pml-toc-leaf-node"><a href="#ch__16">New lines</a></li>
+                                                        <li class="pml-toc-leaf-node"><a href="#ch__17">Differences between XML and pXML</a></li>
+                                                    </ul>
+                                                </details>
+                                            </li>
+                                            <li class="pml-toc-leaf-node"><a href="#ch__18">Comments</a></li>
+                                            <li class="pml-toc-leaf-node"><a href="#ch__19">Other</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li class="pml-toc-branch-node">
+                                    <details>
+                                        <summary><a href="#ch__20">History</a></summary>
+                                        <ul>
+                                            <li class="pml-toc-leaf-node"><a href="#ch__21">pXML Predecessor</a></li>
+                                            <li class="pml-toc-leaf-node"><a href="#lenient_PML">Lenient Syntax in PML</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li class="pml-toc-leaf-node"><a href="#ch__22">Implementation</a></li>
+                                <li class="pml-toc-branch-node">
+                                    <details>
+                                        <summary><a href="#ch__23">Examples</a></summary>
+                                        <ul>
+                                            <li class="pml-toc-leaf-node"><a href="#ch__24">Simple Config File</a></li>
+                                            <li class="pml-toc-leaf-node"><a href="#ch__25">HTML Code</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li class="pml-toc-leaf-node"><a href="#ch__26">Syntax Comparison</a></li>
+                                <li class="pml-toc-leaf-node"><a href="#ch__27">Summary And Conclusion</a></li>
+                                <li class="pml-toc-leaf-node"><a href="#ch__28">Article History</a></li>
+                            </ul>
                         </div>
                     </nav>
                 </aside>
@@ -353,7 +358,7 @@
                                 <p class="pml-paragraph">This is a bit more verbose than the XML syntax, because there is one more character per closing tag. But it is also a bit easier to write because the <code class="pml-inline-code">Shift</code> key doesn't have to be used twice. In practice the verbose syntax is only needed to close big tags with many levels of child elements. So I think the alternative pXML syntax to close tags is a good compromise. It's there if you need it, and it works well (no corner cases that require special rules).</p>
                             </section>
                             <section id="name_rules" class="pml-chapter">
-                                <h4 class="pml-chapter-title">Naming Rules</h4>
+                                <h4 class="pml-chapter-title">Name Rules</h4>
                                 <p class="pml-paragraph">For compatibility reasons, the rules for element names in pXML must be the same as in <a href="https://www.w3schools.com/xml/xml_elements.asp" class="pml-link">XML</a>. Element names:</p>
                                 <ul class="pml-list">
                                     <li class="pml-list-element">
@@ -373,127 +378,10 @@
                                     </li>
                                 </ul>
                             </section>
-                        </section>
-                        <section id="ch__11" class="pml-chapter">
-                            <h3 class="pml-chapter-title">Meta Data</h3>
-                            <section id="XML_attributes" class="pml-chapter">
-                                <h4 class="pml-chapter-title">XML Attributes</h4>
-                                <p class="pml-paragraph">Besides elements, XML also supports <i class="pml-italic">attributes</i>. Here is an example of an XML element with attributes:</p>
-                                <pre class="pml-code"><code>&lt;div id=&quot;unplug_warning&quot; class=&quot;warning big-text&quot;&gt;Unplug power cord before opening!&lt;/div&gt;</code></pre>
-                                <p class="pml-paragraph">XML doesn't specify when to use attributes instead of elements. However, it's considered <a href="https://www.w3schools.com/xml/xml_dtd_el_vs_attr.asp" class="pml-link">good practice</a> to use attributes only for <i class="pml-italic">metadata</i> (data about data). All <i class="pml-italic">data</i> should be stored in child-elements.</p>
-                                <p class="pml-paragraph">Here is an reprint of a simple data structure we saw in a <a href="#albert_example" class="pml-xref">previous</a> chapter:</p>
-                                <pre class="pml-code"><code>&lt;person&gt;
-    &lt;name&gt;Albert&lt;/name&gt;
-    &lt;married&gt;true&lt;/married&gt;
-    &lt;address&gt;
-        &lt;street&gt;Kramgasse&lt;/street&gt;
-        &lt;city&gt;Bern&lt;/city&gt;
-    &lt;/address&gt;
-    &lt;phones&gt;
-        &lt;phone&gt;123&lt;/phone&gt;
-        &lt;phone&gt;456&lt;/phone&gt;
-    &lt;/phones&gt;
-&lt;/person&gt;</code></pre>
-                                <p class="pml-paragraph">We <i class="pml-italic">could</i> use attributes for some data and rewrite the code like this:</p>
-                                <pre class="pml-code"><code>&lt;person name=&quot;Albert&quot; married=&quot;true&quot;&gt;
-    &lt;address street=&quot;Kramgasse&quot; city=&quot;Bern&quot; /&gt;
-    &lt;phones&gt;
-        &lt;phone&gt;123&lt;/phone&gt;
-        &lt;phone&gt;456&lt;/phone&gt;
-    &lt;/phones&gt;
-&lt;/person&gt;</code></pre>
-                                <p class="pml-paragraph">However we should not do that if we follow the general advice that attributes should be used for <i class="pml-italic">meta</i>data. Clearly, <code class="pml-inline-code">name</code>, <code class="pml-inline-code">married</code>, <code class="pml-inline-code">street</code>, and <code class="pml-inline-code">city</code> are <i class="pml-italic">not</i> metadata, they are data.</p>
-                                <p class="pml-paragraph">In practice, people sometimes use attributes for data because it reduces verbosity (as can be seen in the above example) or maybe because they are not aware of the general advice. Searching the net for 'xml elements vs attributes' reveals that there is <i class="pml-italic">a lot</i> of confusion, as shown <a href="https://stackoverflow.com/questions/33746/xml-attribute-vs-xml-element" class="pml-link">here</a>, <a href="https://stackoverflow.com/questions/1096797/should-i-use-elements-or-attributes-in-xml" class="pml-link">here</a>, and <a href="https://www.ibm.com/developerworks/library/x-eleatt/index.html" class="pml-link">here</a>, for example.</p>
-                                <p class="pml-paragraph">HTML code like the following one is fine, because the attribute is used to store metadata:</p>
-                                <pre class="pml-code"><code>&lt;span class=&quot;redOnYellow&quot;&gt;Good News!&lt;/span&gt;</code></pre>
-                                <p class="pml-paragraph">It is important to note that we <i class="pml-italic">could</i> also use an element for <code class="pml-inline-code">class</code> (thereby violating the advice):</p>
-                                <pre class="pml-code"><code>&lt;span&gt;&lt;class&gt;redOnYellow&lt;/class&gt;Good News!&lt;/span&gt;</code></pre>
-                            </section>
-                            <section id="ch__12" class="pml-chapter">
-                                <h4 class="pml-chapter-title">Attributes in pXML?</h4>
-                                <p class="pml-paragraph">In the first draft of this article, attributes were supported in pXML. The above XML example:</p>
-                                <pre class="pml-code"><code>&lt;div id=&quot;unplug_warning&quot; class=&quot;warning big-text&quot;&gt;Unplug power cord before opening!&lt;/div&gt;</code></pre>
-                                <p class="pml-paragraph">... would be written like this in pXML:</p>
-                                <pre class="pml-code"><code>[div ( id=unplug_warning class=&quot;warning big-text&quot; ) Unplug power cord before opening!]</code></pre>
-                                <p class="pml-paragraph">As shown, attribute assignments were embedded in parenthesis (which is familiar to many programmers), and attribute values without spaces didn't need to be quoted (e.g. <code class="pml-inline-code">id=unplug_warning</code>).</p>
-                                <p class="pml-paragraph">Right after I finished the chapter about pXML attributes, I leaned back and asked myself: &quot;Do we really <i class="pml-italic">need</i> attributes?&quot;.</p>
-                                <p class="pml-paragraph">One of the best general advice for good engineering popped up in my mind:</p>
-                                <blockquote class="pml-quote">
-                                    <div class="pml-quote-text-block">
-                                        <div class="pml-quote-text-prefix"></div>
-                                        <div class="pml-quote-text">
-                                            <p class="pml-paragraph">Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.</p>
-                                        </div>
-                                        <div class="pml-quote-text-suffix"></div>
-                                    </div>
-                                    <div class="pml-quote-source">Antoine de Saint-Exupery</div>
-                                </blockquote>
-                                <p class="pml-paragraph">After playing around with some examples, I concluded: &quot;No, we do not need attributes!&quot;.</p>
-                                <p class="pml-paragraph">So let's be bold. Let's remove attributes. We don't need them. As we'll see soon, we'll reap some nice benefits from doing so.</p>
-                            </section>
-                            <section id="ch__13" class="pml-chapter">
-                                <h4 class="pml-chapter-title">Separation of Data And Metadata</h4>
-                                <p class="pml-paragraph">What we <i class="pml-italic">need</i> is a separation of metadata and data, because that's sometimes very useful (and heavily used in HTML to style documents). However, we don't need <i class="pml-italic">attributes</i> to make that separation. We can just use <i class="pml-italic">elements</i> to store metadata. We only need to find a way to distinguish elements that contain metadata from those who contain data. I finally opted to use the character <code class="pml-inline-code">#</code> as a name prefix for elements containing metadata. The reason for this choice is that we can think of <code class="pml-inline-code">#</code> as <i class="pml-italic">different</i> (not equal). Metadata are <i class="pml-italic">different</i> from data, so <code class="pml-inline-code">#</code> is easy to remember. Moreover, according to the XML <a href="#name_rules" class="pml-xref">naming rules</a> (which are also applied in pXML) <code class="pml-inline-code">#</code> is not allowed in a name. Hence there is no clash, no ambiguity.</p>
-                                <p class="pml-paragraph">As a result, the following HTML code:</p>
-                                <pre class="pml-code"><code>&lt;span class=&quot;redOnYellow&quot;&gt;Good News!&lt;/span&gt;</code></pre>
-                                <p class="pml-paragraph">... is written like this in pXML (note the <code class="pml-inline-code">#</code> prefix for <code class="pml-inline-code">class</code>):</p>
-                                <pre class="pml-code"><code>[span [#class redOnYellow]Good News!]</code></pre>
-                                <p class="pml-paragraph">Yes, this might look unappealing at first - especially for people used to look at HTML code for years.</p>
-                                <p class="pml-paragraph">Nobody is required to agree immediately. Let's first calmly look at advantages and disadvantages.</p>
-                            </section>
-                            <section id="ch__14" class="pml-chapter">
-                                <h4 class="pml-chapter-title">Advantages</h4>
-                                <p class="pml-paragraph">Using elements instead of attributes to store metadata has remarkable advantages:</p>
-                                <ul class="pml-list">
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">Complexity is significantly reduced</p>
-                                    </li>
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">Metadata becomes as powerful as data</p>
-                                    </li>
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">No confusion about using attributes or elements</p>
-                                    </li>
-                                </ul>
-                                <p class="pml-paragraph">Let's dig deeper and discover some practical benefits.</p>
-                                <p class="pml-paragraph"><br /> <b class="pml-bold">1. Complexity is significantly reduced.</b></p>
-                                <p class="pml-paragraph">In pXML data <i class="pml-italic">and</i> metadata:</p>
-                                <ul class="pml-list">
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">are defined with the same syntax</p>
-                                    </li>
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">have the same features</p>
-                                    </li>
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">are governed by the same rules</p>
-                                    </li>
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">are accessed programmatically in the same way (same API)</p>
-                                    </li>
-                                </ul>
-                                <p class="pml-paragraph">This is not the case in XML. Attributes and elements have different syntaxes, different features, different rules, and different APIs.</p>
-                                <p class="pml-paragraph">A few examples should demonstrate this.</p>
-                                <p class="pml-paragraph"><b class="pml-bold">No quotes needed for values</b></p>
-                                <p class="pml-paragraph">Unlike XML, pXML metadata values never need to be quoted, even if they contain spaces. Therefore, <code class="pml-inline-code">&quot;</code> and <code class="pml-inline-code">'</code> characters also never need to be escaped. Example:</p>
-                                <pre class="pml-code"><code>XML:  &lt;el arg1=&quot;foo bar&quot; arg2=&quot;&amp;quot;'&quot; arg3='&amp;apos;&quot;' /&gt;
-pXML: [el [#arg1 foo bar] [#arg2 &quot;'] [#arg3 '&quot;]]</code></pre>
-                                <p class="pml-paragraph"><b class="pml-bold">Escaping becomes simpler.</b></p>
-                                <p class="pml-paragraph">Five characters must be escaped in XML:</p>
-                                <table class="pml-table">
-                                    <thead class="pml-table-header">
-                                        <tr><th class="pml-table-header-cell">Character</th><th class="pml-table-header-cell">Escape Entity</th></tr>
-                                    </thead>
-                                    <tbody class="pml-table-body">
-                                        <tr><td class="pml-table-body-cell">&lt;</td><td class="pml-table-body-cell">&amp;lt;</td></tr>
-                                        <tr><td class="pml-table-body-cell">&gt;</td><td class="pml-table-body-cell">&amp;gt;</td></tr>
-                                        <tr><td class="pml-table-body-cell">&quot;</td><td class="pml-table-body-cell">&amp;quot;</td></tr>
-                                        <tr><td class="pml-table-body-cell">'</td><td class="pml-table-body-cell">&amp;apos;</td></tr>
-                                        <tr><td class="pml-table-body-cell">&amp;</td><td class="pml-table-body-cell">&amp;amp;</td></tr>
-                                    </tbody>
-                                </table>
-                                <p class="pml-paragraph">Escape rules define when we <i class="pml-italic">need</i> to escape, and when it is an <i class="pml-italic">option</i>. In XML the rules depend on the context (e.g. attribute or element). They are explained in this <a href="https://stackoverflow.com/questions/1091945/what-characters-do-i-need-to-escape-in-xml-documents" class="pml-link">Stackoverflow entry</a>.</p>
-                                <p class="pml-paragraph">In pXML there are only three characters to escape, and the escape tokens are easier to remember and write:</p>
+                            <section id="node_escape_rules" class="pml-chapter">
+                                <h4 class="pml-chapter-title">Escape Rules</h4>
+                                <p class="pml-paragraph">pXML uses the backslash (<code class="pml-inline-code">\ </code>) as escape character.</p>
+                                <p class="pml-paragraph">There are three characters that must always be escaped in text:</p>
                                 <table class="pml-table">
                                     <thead class="pml-table-header">
                                         <tr><th class="pml-table-header-cell">Character</th><th class="pml-table-header-cell">Escape Token</th></tr>
@@ -504,145 +392,171 @@ pXML: [el [#arg1 foo bar] [#arg2 &quot;'] [#arg3 '&quot;]]</code></pre>
                                         <tr><td class="pml-table-body-cell">\</td><td class="pml-table-body-cell">\\</td></tr>
                                     </tbody>
                                 </table>
-                                <p class="pml-paragraph">The rule is simple: All three characters must always be escaped in text (data and metadata). There are no exceptions.</p>
-                                <p class="pml-paragraph">Example of metadata with characters that must be escaped:</p>
-                                <pre class="pml-code"><code>// metadata value: Watch out for &lt;, &gt;, &quot;, ', &amp;, [, ], and \ characters
+                                <p class="pml-paragraph">The following code shows how the text <code class="pml-inline-code">Watch out for &lt;, &gt;, &quot;, ', &amp;, [, ], and \ characters</code> must be escaped in XML and pXML:</p>
+                                <pre class="pml-code"><code>XML:  &lt;note&gt;Watch out for &amp;lt;, &amp;gt;, &amp;quot;, &amp;apos;, &amp;amp;, [, ], and \ characters&lt;/note&gt;
 
-XML:  note = &quot;Watch out for &amp;lt;, &amp;gt;, &amp;quot;, &amp;apos;, &amp;amp;, [, ], and \ characters&quot;
-pXML: [#note Watch out for &lt;, &gt;, &quot;, ', &amp;, \[, \], and \\ characters]</code></pre>
-                                <p class="pml-paragraph"><b class="pml-bold">Grammar becomes simpler</b></p>
-                                <p class="pml-paragraph">Removing attributes significantly simplifies the pXML grammar (typically expressed in EBNF).</p>
-                                <p class="pml-paragraph">Hence writing a parser for pXML is easier than writing one for XML. All other tools exploring the structure also become easier to implement and use.</p>
-                                <p class="pml-paragraph"><br /> <b class="pml-bold">2. Metadata become as powerful as data.</b></p>
-                                <p class="pml-paragraph">Chapter &quot;XML Elements vs. Attributes&quot; on <a href="https://www.w3schools.com/xml/xml_dtd_el_vs_attr.asp" class="pml-link">W3Schools</a> states:</p>
-                                <div style="padding-left: 2em; background-color: #f8f8f8;" class="pml-division">
-                                    <p class="pml-paragraph">Some of the problems with attributes are:</p>
-                                    <ul class="pml-list">
-                                        <li class="pml-list-element">
-                                            <p class="pml-paragraph">attributes cannot contain multiple values (child elements can)</p>
-                                        </li>
-                                        <li class="pml-list-element">
-                                            <p class="pml-paragraph">attributes are not easily expandable (for future changes)</p>
-                                        </li>
-                                        <li class="pml-list-element">
-                                            <p class="pml-paragraph">attributes cannot describe structures (child elements can)</p>
-                                        </li>
-                                        <li class="pml-list-element">
-                                            <p class="pml-paragraph">attributes are more difficult to manipulate by program code</p>
-                                        </li>
-                                        <li class="pml-list-element">
-                                            <p class="pml-paragraph">attribute values are not easy to test against a DTD</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p class="pml-paragraph">By removing attributes all these problems vanish. Storing metadata in elements makes them as powerful as normal data.</p>
-                                <p class="pml-paragraph">For example, the value of an XML attribute can only be a string. In pXML, metadata can also be stored as a structure (tree of values) which means:</p>
-                                <ul class="pml-list">
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">A validation mechanism (such as XMLSchema, RelaxNG or Schematron in XML) can be applied to specify the structure and to detect invalid metadata quickly at parse time.</p>
-                                    </li>
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">Components of metadata (tree nodes) can be accessed programmatically more easily and more reliably with standard XML techniques.</p>
-                                        <p class="pml-paragraph">Say we have the following XML attribute:</p>
-                                        <pre class="pml-code"><code>style = &quot;color: blue; font-family: Arial; background-color: inherit;&quot;</code></pre>
-                                        <p class="pml-paragraph">Now suppose we need to extract the value of <code class="pml-inline-code">font-family</code>. To achieve this we would need to write a mini-parser that extracts the value. Not a trivial task if it needs to work well in all variations of defining the <code class="pml-inline-code">style</code> attribute.</p>
-                                        <p class="pml-paragraph">In pXML <code class="pml-inline-code">style</code> could be defined like this:</p>
-                                        <pre class="pml-code"><code>[#style
-    [color blue]
-    [font-family Arial]
-    [background-color inherit]
-]</code></pre>
-                                        <p class="pml-paragraph">After loading the code into an XML document we can easily and reliably extract the value of <code class="pml-inline-code">font-family</code> with standard XML techniques such as XPath or XML Query.</p>
-                                    </li>
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">Components of metadata are easier and less error-prone to insert, modify, and delete.</p>
-                                        <p class="pml-paragraph">Again, standard XML techniques can be used to do that.</p>
-                                    </li>
-                                </ul>
-                                <p class="pml-paragraph">Here is an example of pXML metadata <code class="pml-inline-code">#GUI_data</code> defined as a nested data structure:</p>
-                                <pre class="pml-code"><code>[grid_cell
-    [#GUI_data
-        [grid_position
-            [line 10]
-            [column 2]
-        ]
-        [color
-            [text purple]
-            [background yellow]
-        ]
-    ]
-    [content Cell content]
-]</code></pre>
-                                <p class="pml-paragraph">Note that element names within metadata don't need to be prefixed with <code class="pml-inline-code">#</code>, because the content of metadata is obviously metadata too.</p>
-                                <p class="pml-paragraph"><br /> <b class="pml-bold">3. No confusion about using attributes or elements.</b></p>
-                                <p class="pml-paragraph">As said already in chapter <a href="#XML_attributes" class="pml-xref">XML Attributes</a> there is a lot of confusion in the XML world about when to use attributes and when to use elements.</p>
-                                <p class="pml-paragraph">Sometimes attributes are used while the correct way would be to use elements, or vice-versa. If the mistake is fixed later, all code that accesses the data must be updated too, because XML attributes have a different API than elements. Moreover, entities used to escape characters might need to be adapted too, because the rules for escaping characters in attributes and elements are different. This can turn into a frustrating and error-prone process.</p>
-                                <p class="pml-paragraph">In pXML there is no such confusion, because data and metadata are all stored in elements.</p>
-                                <p class="pml-paragraph">The temptation to use attributes to reduce verbosity vanishes too and doesn't make sense anymore, because the number of markup characters for pXML elements is the same as for XML attributes. Example:</p>
-                                <pre class="pml-code"><code>XML element:   &lt;identifier&gt;123&lt;/identifier&gt;
-XML attribute: identifier=&quot;123&quot;
-pXML element:  [identifier 123]</code></pre>
-                                <p class="pml-paragraph">There is only one question that arises in pXML: &quot;Is this value data or metadata?&quot;. If it is metadata then the element's name should be prefixed with <code class="pml-inline-code">#</code>. That's it. If the initial choice was wrong, it can easily be changed later. No need to worry about escaping, and less API changes.</p>
-                                <div class="pml-admonition">
-                                    <div class="pml-admonition-label">Note</div>
-                                    <div class="pml-admonition-content">
-                                        <p class="pml-paragraph">Deciding whether a value is data or metadata can sometimes be a bit tricky. Advice on this is out of scope of this article. If in doubt, choose 'data'. Or get some tips from <a href="http://www.cafeconleche.org/books/effectivexml/chapters/12.html" class="pml-link">Store metadata in attributes</a>.</p>
-                                    </div>
-                                </div>
-                            </section>
-                            <section id="ch__15" class="pml-chapter">
-                                <h4 class="pml-chapter-title">Disadvantages</h4>
-                                <p class="pml-paragraph">I looked hard for disadvantages before deciding to remove attributes in pXML. I am not an XML expert. So, if I missed something then please leave a comment. I will fix what needs to be fixed.</p>
-                                <p class="pml-paragraph">Here are some points to consider:</p>
-                                <p class="pml-paragraph"><br /> <b class="pml-bold">1. New markup symbol</b></p>
-                                <p class="pml-paragraph">A new markup symbol (<code class="pml-inline-code">#</code>) has been added.</p>
-                                <p class="pml-paragraph">However, this symbol can only appear as a prefix to an element name. Therefore there is no need to escape <code class="pml-inline-code">#</code> in text.</p>
-                                <p class="pml-paragraph">Moreover, we have also <i class="pml-italic">removed</i> three markup symbols: <code class="pml-inline-code">=</code>, <code class="pml-inline-code">&quot;</code>, and <code class="pml-inline-code">'</code>. And there is no more need to escape <code class="pml-inline-code">&quot;</code> or <code class="pml-inline-code">'</code>.</p>
-                                <p class="pml-paragraph"><br /> <b class="pml-bold">2. XML/pXML gap</b></p>
-                                <p class="pml-paragraph">Removing attributes increases the gap between XML and pXML. But the impact is less severe than it might seem at first.</p>
-                                <p class="pml-paragraph">The basic concept of separating data and metadata remains the same.</p>
-                                <p class="pml-paragraph">It is still easy to convert pXML to XML and vice versa.</p>
-                                <p class="pml-paragraph">However, there is an incompatibility issue that arises when pXML code is converted to XML (e.g. read into an XML DOM or converted to XML code) <i class="pml-italic">and</i> pXML metadata uses structured data (not only strings). The issue arises because XML attributes support only strings. Some workarounds to consider could be:</p>
-                                <ul class="pml-list">
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">Store pXML metadata in XML elements too (all metadata, or just metadata with structured values).</p>
-                                        <p class="pml-paragraph">If needed, the distinction between data and metadata in XML elements could be made by using a specific prefix or suffix for the element name. For example <code class="pml-inline-code">#class</code> in pXML becomes <code class="pml-inline-code">_class</code> in XML (according to the <a href="#name_rules" class="pml-xref">rules</a> XML element names can start with an underscore).</p>
-                                        <p class="pml-paragraph">Alternatively, one could add an attribute (or child-element) to flag an element as metadata, e.g.</p>
-                                        <pre class="pml-code"><code>&lt;rendering metadata=&quot;yes&quot;&gt;
-    &lt;color&gt;blue&lt;/color&gt;
-    &lt;size&gt;big&lt;/size&gt;
-&lt;/rendering&gt;</code></pre>
-                                    </li>
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">Convert all structured pXML metadata into a string that can be stored in an XML attribute (might not be easy too implement).</p>
-                                    </li>
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">Allow only strings for pXML metadata. Pseudo-code:</p>
-                                        <pre class="pml-code"><code>if XML_compatibility_required and type of metavalue is not string then
-    raise error
-.</code></pre>
-                                    </li>
-                                </ul>
-                                <p class="pml-paragraph"><br /> <b class="pml-bold">3. Pain of change</b></p>
-                                <p class="pml-paragraph">Humans tend to <i class="pml-italic">resist change</i>.</p>
-                                <p class="pml-paragraph">The biggest obstacle for a new syntax might be the &quot;pain of change&quot;. Some people might immediately be put off by the idea of removing attributes, because they are considered to be 'an essential part of XML'. Intuition shouts: &quot;No, no, we can't do that!&quot;.</p>
-                                <p class="pml-paragraph">Should we reject progress if the advantages justify a temporary effort?</p>
-                                <p class="pml-paragraph">If we can:</p>
-                                <ul class="pml-list">
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">make it more simple</p>
-                                    </li>
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">make it more powerful at the same time</p>
-                                    </li>
-                                    <li class="pml-list-element">
-                                        <p class="pml-paragraph">without creating weighty, long-term disadvantages</p>
-                                    </li>
-                                </ul>
-                                <p class="pml-paragraph">... then we should &quot;Just do it!&quot;.</p>
+pXML: [note Watch out for &lt;, &gt;, &quot;, ', &amp;, \[, \], and \\ characters]</code></pre>
+                                <p class="pml-paragraph">Any Unicode character can be inserted by using the <code class="pml-inline-code">\uhhhh</code> syntax commonly used in programming languages. For example the text:</p>
+                                <pre class="pml-code"><code>Hell\u006f</code></pre>
+                                <p class="pml-paragraph">is parsed as:</p>
+                                <pre class="pml-code"><code>Hello</code></pre>
+                                <p class="pml-paragraph">XML entities are currently not supported in pXML.</p>
+                                <p class="pml-paragraph">In XML, <code class="pml-inline-code">&quot;a &amp;lt; 1&quot;</code> is parsed as <code class="pml-inline-code">a &lt; 1</code>. In pXML it is parsed as <code class="pml-inline-code">&quot;a &amp;lt; 1&quot;</code></p>
+                                <p class="pml-paragraph">However, if a pXML document is converted to an XML document (or XML to pXML), the conversion automatically applies the correct escape rules. For example, the following pXML text:</p>
+                                <pre class="pml-code"><code>\[ &lt;</code></pre>
+                                <p class="pml-paragraph">... will be converted to the following XML text:</p>
+                                <pre class="pml-code"><code>[ &amp;lt;</code></pre>
+                                <p class="pml-paragraph">... and vice versa.</p>
                             </section>
                         </section>
-                        <section id="ch__16" class="pml-chapter">
+                        <section id="ch__11" class="pml-chapter">
+                            <h3 class="pml-chapter-title">Attributes</h3>
+                            <section id="ch__12" class="pml-chapter">
+                                <h4 class="pml-chapter-title">Overview</h4>
+                                <p class="pml-paragraph">Besides elements, XML also supports attributes. Here is an example of an XML element with attributes:</p>
+                                <pre class="pml-code"><code>&lt;div id=&quot;unplug_warning&quot; class=&quot;warning big-text&quot;&gt;Unplug power cord before opening!&lt;/div&gt;</code></pre>
+                                <p class="pml-paragraph">In pXML, the same code looks like this:</p>
+                                <pre class="pml-code"><code>[div ( id=unplug_warning class=&quot;warning big-text&quot; ) Unplug power cord before opening!]</code></pre>
+                                <p class="pml-paragraph">As can be seen, the two syntaxes are similar. There are two obvious differences:</p>
+                                <ul class="pml-list">
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">In pXML, attributes are embedded in parenthesis: <code class="pml-inline-code">(...)</code>. The syntax is similar to function argument assignments in some programming languages.</p>
+                                    </li>
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">In pXML, attribute values don't always need to be quoted (e.g. <code class="pml-inline-code">id=unplug_warning</code>).</p>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section id="ch__13" class="pml-chapter">
+                                <h4 class="pml-chapter-title">Names</h4>
+                                <p class="pml-paragraph">In XML, attribute names are not quoted (unlike in JSON), and they must respect the same rules as we <a href="#name_rules" class="pml-xref">previously</a> saw for element tag names.</p>
+                                <p class="pml-paragraph">In order to stay compatible with XML, pXML applies the same rules. Attribute names:</p>
+                                <ul class="pml-list">
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">must start with a letter or underscore</p>
+                                    </li>
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">can contain letters, digits, hyphens, underscores, and periods (no spaces)</p>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section id="ch__14" class="pml-chapter">
+                                <h4 class="pml-chapter-title">Values</h4>
+                                <p class="pml-paragraph">In XML, attribute values must always be quoted with <code class="pml-inline-code">&quot;</code>. Example: <code class="pml-inline-code">name = &quot;Bob&quot;</code>.</p>
+                                <p class="pml-paragraph">In pXML, values can be unquoted, double-quoted, or single-quoted.</p>
+                                <p class="pml-paragraph"><b class="pml-bold">Unquoted value</b></p>
+                                <p class="pml-paragraph">Values are <i class="pml-italic">not required</i> to be quoted if they don't contain:</p>
+                                <ul class="pml-list">
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">whitespace: <code class="pml-inline-code">&lt;space&gt;, &lt;tab&gt;, &lt;carriage return&gt;, &lt;line feed&gt;</code></p>
+                                    </li>
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">square brackets: <code class="pml-inline-code">[ and ]</code></p>
+                                    </li>
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">parenthesis: <code class="pml-inline-code">( and )</code></p>
+                                    </li>
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">quotes: <code class="pml-inline-code">&quot; and '</code></p>
+                                    </li>
+                                </ul>
+                                <p class="pml-paragraph">Examples:</p>
+                                <pre class="pml-code"><code>name = Bob
+port = 8080
+path = C:\Users\Alice</code></pre>
+                                <p class="pml-paragraph"><b class="pml-bold">Double-quoted and single-quoted value</b></p>
+                                <p class="pml-paragraph">If a value contains any of the characters not allowed in unquoted values, then the value <i class="pml-italic">must</i> be surrounded by double-quotes (<code class="pml-inline-code">&quot;</code>) or single-quotes (<code class="pml-inline-code">'</code>).</p>
+                                <p class="pml-paragraph">Examples:</p>
+                                <pre class="pml-code"><code>food = &quot;healthy orange&quot;                 // contains space
+expression = &quot;array[17]&quot;                // contains square brackets
+conclusion = &quot;It's ok.&quot;                 // contains '
+statement = 'He said: &quot;All is well&quot;.'   // contains &quot;</code></pre>
+                            </section>
+                            <section id="ch__15" class="pml-chapter">
+                                <h4 class="pml-chapter-title">Escape rules</h4>
+                                <p class="pml-paragraph">Escape sequences are not supported in unquoted attribute values. Therefore parsing unquoted values is a bit faster.</p>
+                                <p class="pml-paragraph">Escaping is supported for double-quoted and single-quoted values. The following rules are applied:</p>
+                                <ul class="pml-list">
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">A backslash (<code class="pml-inline-code">\ </code>) is used to start an escape sequence.</p>
+                                    </li>
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">Double quotes must be escaped in double-quoted values with <code class="pml-inline-code">\&quot;</code>. Example:</p>
+                                        <pre class="pml-code"><code>statement = &quot;He said: \&quot;All is well\&quot;.&quot;    // He said: &quot;All is well&quot;.</code></pre>
+                                    </li>
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">Single quotes must be escaped in single-quoted values with <code class="pml-inline-code">\'</code>. Example:</p>
+                                        <pre class="pml-code"><code>conclusion = 'It\'s ok.'    // It's ok.</code></pre>
+                                    </li>
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">A backslash must be escaped with <code class="pml-inline-code">\\ </code>. Example:</p>
+                                        <pre class="pml-code"><code>path = &quot;C:\\Users\\Alice&quot;    // C:\Users\Alice</code></pre>
+                                    </li>
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">The following values can <i class="pml-italic">optionally</i> be escaped:</p>
+                                        <table class="pml-table">
+                                            <thead class="pml-table-header">
+                                                <tr><th class="pml-table-header-cell">Name</th><th class="pml-table-header-cell">Syntax</th></tr>
+                                            </thead>
+                                            <tbody class="pml-table-body">
+                                                <tr><td class="pml-table-body-cell">square brackets</td><td class="pml-table-body-cell">\[ \]</td></tr>
+                                                <tr><td class="pml-table-body-cell">tab</td><td class="pml-table-body-cell">\t</td></tr>
+                                                <tr><td class="pml-table-body-cell">carriage return</td><td class="pml-table-body-cell">\r</td></tr>
+                                                <tr><td class="pml-table-body-cell">line feed</td><td class="pml-table-body-cell">\n</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">Any Unicode character can be inserted by using the <code class="pml-inline-code">\uhhhh</code> syntax commonly used in programming languages. Example:</p>
+                                        <pre class="pml-code"><code>word = &quot;Hell\u006f&quot;    // Hello</code></pre>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section id="ch__16" class="pml-chapter">
+                                <h4 class="pml-chapter-title">New lines</h4>
+                                <p class="pml-paragraph">For better readability, attribute assignments can be written on separate lines, like this:</p>
+                                <pre class="pml-code"><code>[image (
+    source = images/kid.png
+    title  = &quot;Kid is flabbergasted&quot;
+    width  = 800px
+    height = 600px
+)]</code></pre>
+                                <p class="pml-paragraph">Whitespace between attribute assignments is ignored.</p>
+                                <p class="pml-paragraph">Quoted values can contain new lines. Example:</p>
+                                <pre class="pml-code"><code>statement = 'He said:       // He said:
+&quot;All is well!&quot;'             // &quot;All is well!&quot; </code></pre>
+                                <p class="pml-paragraph">If new lines are inserted literally in the code, as in the above example, then the actual new line character(s) parsed depend on the operating system, as well as the editor/program configuration used to create the code. By default:</p>
+                                <ul class="pml-list">
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">On Unix/Linux, a new line is a single &lt;line feed&gt; character</p>
+                                    </li>
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">On Windows, a new line is composed of two characters: a &lt;carriage return&gt; and &lt;line feed&gt;</p>
+                                    </li>
+                                </ul>
+                                <p class="pml-paragraph">On both systems, this default behavior might be overridden. For example, a Windows editor can be configured to produce a single &lt;line feed&gt; character for new lines inserted in the code.</p>
+                                <p class="pml-paragraph">To force a specific new line in pXML code, we can use an escape sequence in the code, e.g.:</p>
+                                <pre class="pml-code"><code>statement = 'He said:\r\n&quot;All is well!&quot;'    // Windows new line forced
+statement = 'He said:\n&quot;All is well!&quot;'      // Unix new line forced</code></pre>
+                            </section>
+                            <section id="ch__17" class="pml-chapter">
+                                <h4 class="pml-chapter-title">Differences between XML and pXML</h4>
+                                <p class="pml-paragraph">In pXML, writing:</p>
+                                <pre class="pml-code"><code>[e (a1=v1 a2=v2)]</code></pre>
+                                <p class="pml-paragraph">is semantically equivalent to:</p>
+                                <pre class="pml-code"><code>[e [a1 v1][a2 v2]]</code></pre>
+                                <p class="pml-paragraph">In both cases, node <code class="pml-inline-code">e</code> is a node with two child nodes: <code class="pml-inline-code">a1</code> and <code class="pml-inline-code">a2</code>. The API to access the content of <code class="pml-inline-code">e</code> is the same in both cases.</p>
+                                <p class="pml-paragraph">pXML attributes just provide an alternative <i class="pml-italic">syntax</i> for child nodes.</p>
+                                <p class="pml-paragraph">The alternative syntax is useful because it is better suited for sets of child nodes that contain only text.</p>
+                                <p class="pml-paragraph">Here is a node not using attributes:</p>
+                                <pre class="pml-code"><code>[image [source ball.png][width 300px][height 200px]]</code></pre>
+                                <p class="pml-paragraph">The same node defined with attributes looks like this:</p>
+                                <pre class="pml-code"><code>[image (source=ball.png width=300px height=200px)]</code></pre>
+                                <p class="pml-paragraph">The second version (using attributes) is slightly shorter, easier to read and write, and more familiar to people used to the XML attributes syntax. However, both versions are parsed into the same tree structure.</p>
+                                <p class="pml-paragraph">This is in contrast to XML, where attributes and elements are different. In XML, the API used to access attributes is different from the API for child elements. Hence, a program that reads an XML structure must know if a value is defined as an attribute or an element. Moreover, if a value that was initially defined as an attribute, is later defined as an element (or vice versa), then the program that reads the value must be updated. This is not necessary in pXML.</p>
+                            </section>
+                        </section>
+                        <section id="ch__18" class="pml-chapter">
                             <h3 class="pml-chapter-title">Comments</h3>
                             <p class="pml-paragraph">An XML comment looks like this:</p>
                             <pre class="pml-code"><code>&lt;!-- text of comment --&gt;</code></pre>
@@ -667,37 +581,37 @@ pXML element:  [identifier 123]</code></pre>
                                 </div>
                             </div>
                         </section>
-                        <section id="ch__17" class="pml-chapter">
+                        <section id="ch__19" class="pml-chapter">
                             <h3 class="pml-chapter-title">Other</h3>
-                            <p class="pml-paragraph">There are some other XML syntax constructs not covered in this article. For example: XML entities, namespaces, CDATA sections, and processing instructions. This is an introductory article, so these items might be the subject of a follow-up article.</p>
+                            <p class="pml-paragraph">The following XML syntax constructs are not covered in this introductory article: XML entities, namespaces, CDATA sections, and processing instructions. They might be the subject of a follow-up article.</p>
                         </section>
                     </section>
-                    <section id="ch__18" class="pml-chapter">
+                    <section id="ch__20" class="pml-chapter">
                         <h2 class="pml-chapter-title">History</h2>
-                        <section id="ch__19" class="pml-chapter">
+                        <section id="ch__21" class="pml-chapter">
                             <h3 class="pml-chapter-title">pXML Predecessor</h3>
                             <p class="pml-paragraph">When I started to ponder about the new syntax, I didn't think at all about creating a better XML/HTML syntax. What I <i class="pml-italic">wanted</i> was a new syntax to write articles (published on a blog) and books. Initially I used Docbook, then Asciidoctor to write articles. I also tried out Markdown, and had a look at other syntaxes like RestructedText. To make a long story short: I felt frustrated with some impracticabilities of existing solutions, and finally decided to design a new syntax called <i class="pml-italic">Practical Markup Language (<b class="pml-bold">PML</b>)</i>. If you want to know more about my motivation to create PML, you can read <a href="https://www.pml-lang.dev/docs/articles/practical-document-markup-language/index.html" class="pml-link">We Need a New Document Markup Language - Here is Why</a> (published in March 2019). (Note: For readers still using a word processor, I also wrote <a href="https://www.pml-lang.dev/docs/articles/advantages-markup-language-vs-word-processor/index.html" class="pml-link">Advantages of Document Markup Languages vs WYSIWYG Editors</a>)</p>
                             <p class="pml-paragraph">Nowadays I write all my articles in PML (including this one). To publish them I created a <i class="pml-italic">PML to HTML Converter</i> which reads a PML file and creates a HTML file. You can have a look at the PML source of this article <a href="https://github.com/ppl-lang/blog/tree/main/2021-03-Suggestion_for_better_XML_HTML/PML_source" class="pml-link">here</a>, and you can see the original version of it <a href="https://www.ppl-lang.dev/blog/suggestion-for-better-xml-html/index.html" class="pml-link">here</a> (i.e. the result produced by the <i class="pml-italic">PML to HTML Converter</i>). Right-click on the original article, and click 'View Page Source' if you want to have a look at the HTML code produced by the <i class="pml-italic">PML to HTML Converter</i>. The converter produces indented, clean and simple HTML code, like hand-coded. The <i class="pml-italic">PML to HTML Converter</i> is open-sourced under the GPL2, and written in <a href="https://www.ppl-lang.dev" class="pml-link">PPL</a> (<i class="pml-italic">Practical Programming Language</i>). The source code is on <a href="https://www.github.com/pml-lang/converter" class="pml-link">Github</a>.</p>
                             <p class="pml-paragraph">After creating PML, I suddenly realized that it's syntax could also be used to write XML/HTML documents - a nice side effect. This article is my first step in making my idea public.</p>
-                            <p class="pml-paragraph">One could say that PML is to pXML like HTML is to XML. PML uses the pXML syntax, but only predefined, sematic PML tags are allowed. PML still use attributes, but I want to change that in the future.</p>
+                            <p class="pml-paragraph">One could say that PML is to pXML like HTML is to XML. PML uses the pXML syntax, but only predefined, sematic PML tags are allowed.</p>
                         </section>
                         <section id="lenient_PML" class="pml-chapter">
                             <h3 class="pml-chapter-title">Lenient Syntax in PML</h3>
-                            <p class="pml-paragraph">An important aspect of PML is the parser's ability to work in <i class="pml-italic">lenient mode</i>. This mode supports very targeted syntax simplifications, aiming to eliminate as much &quot;noise&quot; as possible. It should be as easy as possible to write articles and books in PML. Here is an example to illustrate the advantage of the <i class="pml-italic">lenient syntax</i>:</p>
-                            <p class="pml-paragraph">Below is the code of a simple PML document, written in strict pXML:</p>
-                            <pre class="pml-code"><code>[document [title Test]
-    [chapter [title An Unusual Surprise]
-        [paragraph Look at the following picture:]
-        [img [src images/strawberries.jpg]]
-        [paragraph Text of paragraph 2]
-        [paragraph Text of paragraph 3]
+                            <p class="pml-paragraph">An important aspect of PML is the parser's ability to work in <i class="pml-italic">lenient mode</i>. This mode supports very targeted syntax simplifications, aiming to eliminate as much &quot;noise&quot; as possible. It should be <i class="pml-italic">easy</i> to write articles and books in PML. Here is an example to illustrate the advantage of the <i class="pml-italic">lenient syntax</i>:</p>
+                            <p class="pml-paragraph">This is the code of a simple PML document, written in strict pXML:</p>
+                            <pre class="pml-code"><code>[doc (title=Test)
+    [ch (title=&quot;An Unusual Surprise&quot;)
+        [p Look at the following picture:]
+        [image (source=images/strawberries.jpg)]
+        [p Text of paragraph 2]
+        [p Text of paragraph 3]
     ]
 ]</code></pre>
                             <p class="pml-paragraph">In lenient PML mode (always activated), the text can be shortened to:</p>
                             <pre id="pml_lenient_example" class="pml-code"><code>[doc Test
     [ch An Unusual Surprise
         Look at the following picture:
-        [img images/strawberries.jpg]
+        [image images/strawberries.jpg]
         
         Text of paragraph 2
 
@@ -707,16 +621,12 @@ pXML element:  [identifier 123]</code></pre>
                             <p class="pml-paragraph">Let's briefly see how this works:</p>
                             <ul class="pml-list">
                                 <li class="pml-list-element">
-                                    <p class="pml-paragraph"><code class="pml-inline-code">document</code> becomes <code class="pml-inline-code">doc</code>:</p>
-                                    <p class="pml-paragraph">Most PML tags have alternative short names, besides their standard, more verbose name (e.g. <code class="pml-inline-code">doc</code> instead of <code class="pml-inline-code">document</code>, <code class="pml-inline-code">p</code> instead of <code class="pml-inline-code">paragraph</code>, <code class="pml-inline-code">ch</code> instead of <code class="pml-inline-code">chapter</code>, etc.)</p>
+                                    <p class="pml-paragraph"><code class="pml-inline-code">doc (title=Test)</code> becomes <code class="pml-inline-code">doc Test</code>:</p>
+                                    <p class="pml-paragraph">Some elements (for example <code class="pml-inline-code">doc</code>) have a <i class="pml-italic">default attribute</i>. For that attribute only the value needs to be specified - instead of writing <code class="pml-inline-code">(name=value)</code> we can simply write <code class="pml-inline-code">value</code></p>
                                 </li>
                                 <li class="pml-list-element">
-                                    <p class="pml-paragraph"><code class="pml-inline-code">[title Test]</code> becomes <code class="pml-inline-code">Test</code>:</p>
-                                    <p class="pml-paragraph">Some elements (for example <code class="pml-inline-code">chapter</code> and <code class="pml-inline-code">image</code>) have one so-called <i class="pml-italic">default child-element</i>. For that element only the value can be specified - it is not necessary to write <code class="pml-inline-code">[name value]</code></p>
-                                </li>
-                                <li class="pml-list-element">
-                                    <p class="pml-paragraph"><code class="pml-inline-code">[paragraph Text of paragraph 2]</code> becomes <code class="pml-inline-code">Text of paragraph 2</code>:</p>
-                                    <p class="pml-paragraph">If text is not contained in a <code class="pml-inline-code">paragraph</code> (or simply <code class="pml-inline-code">p</code>) element, it is automatically embedded in a <code class="pml-inline-code">paragraph</code> element.</p>
+                                    <p class="pml-paragraph"><code class="pml-inline-code">[p Text of paragraph 2]</code> becomes <code class="pml-inline-code">Text of paragraph 2</code>:</p>
+                                    <p class="pml-paragraph">Free text not contained in an element is automatically embedded in a <code class="pml-inline-code">p</code> (paragraph) element.</p>
                                     <p class="pml-paragraph">Text separated by two new lines automatically creates a paragraph break.</p>
                                 </li>
                             </ul>
@@ -748,16 +658,16 @@ pXML element:  [identifier 123]</code></pre>
                             </ul>
                         </section>
                     </section>
-                    <section id="ch__20" class="pml-chapter">
+                    <section id="ch__22" class="pml-chapter">
                         <h2 class="pml-chapter-title">Implementation</h2>
-                        <p class="pml-paragraph">Having successfully used the PML syntax for some time, I was somewhat confident that the pXML syntax should work well for XML documents too. However, to eliminate any doubts, I wanted a <i class="pml-italic">proof of concept</i> for pXML, before publishing this article. Therefore I created a parser that reads the pXML syntax presented in this article. The parser is written in Java and has no dependencies. I will open-source it.</p>
+                        <p class="pml-paragraph">After using the PML syntax for some time to create real articles (not just tests), I was somewhat confident that the pXML syntax should work well for XML documents too. However, to eliminate doubts, I wanted a <i class="pml-italic">proof of concept</i> for pXML, before publishing this article. Therefore I created a parser that reads the pXML syntax presented in this article. The parser is written in Java and has no dependencies. I will open-source it.</p>
                         <p class="pml-paragraph">The following features are currently implemented:</p>
                         <ul class="pml-list">
                             <li class="pml-list-element">
-                                <p class="pml-paragraph">Convert pXML into XML (meta-elements in pXML are converted into XML attributes, and pXML/XML escape rules are applied)</p>
+                                <p class="pml-paragraph">Convert pXML into XML (pXML/XML escape rules are applied)</p>
                             </li>
                             <li class="pml-list-element">
-                                <p class="pml-paragraph">Convert XML into pXML (attributes in XML are converted into pXML meta-elements, and pXML/XML escape rules are applied)</p>
+                                <p class="pml-paragraph">Convert XML into pXML (pXML/XML escape rules are applied)</p>
                             </li>
                             <li class="pml-list-element">
                                 <p class="pml-paragraph">Read a pXML document into an <code class="pml-inline-code">org.w3c.dom.Document</code> Java object.</p>
@@ -770,7 +680,7 @@ pXML element:  [identifier 123]</code></pre>
                                         <p class="pml-paragraph">programmatically traverse the document</p>
                                     </li>
                                     <li class="pml-list-element">
-                                        <p class="pml-paragraph">insert, modify, and delete elements and attributes, and save the result as a new XML document</p>
+                                        <p class="pml-paragraph">insert, modify, and delete elements and attributes, and save the result as a new XML or pXML document</p>
                                     </li>
                                     <li class="pml-list-element">
                                         <p class="pml-paragraph">query the document (search for values, compute aggregates, etc.) with XQuery/XPath</p>
@@ -799,57 +709,81 @@ pXML element:  [identifier 123]</code></pre>
                         </ul>
                         <p class="pml-paragraph">The opposite (i.e. converting an XML file to a pXML file) can be done with:</p>
                         <pre class="pml-input">XMLToPXMLConverter.XMLFileToPXMLFile ( new File(&quot;hello.xml&quot;), new File(&quot;hello.pxml&quot;) );</pre>
-                        <p class="pml-paragraph">Once the pXML parser is ready to be open-sourced, I'll publish a dedicated article with more examples.</p>
-                        <p class="pml-paragraph">If there is enough interest I might also create a dedicated pXML website with a syntax specification and the grammar expressed in EBNF. Everybody is very welcome to participate in an open-source project.</p>
+                        <p class="pml-paragraph">Once the pXML parser is ready to be open-sourced (planned for May 2021), I'll publish a dedicated article with more examples.</p>
+                        <p class="pml-paragraph">I'm also working on a dedicated pXML website with a syntax specification and the grammar expressed in EBNF and railroad diagrams. Everybody is very welcome to participate in an open-source project.</p>
                     </section>
-                    <section id="ch__21" class="pml-chapter">
+                    <section id="ch__23" class="pml-chapter">
                         <h2 class="pml-chapter-title">Examples</h2>
                         <p class="pml-paragraph">A picture is worth a thousand words. So let's look at two common real life examples: a simple config file, and HTML code. We will compare code written in JSON, XML, pXML, and PML.</p>
-                        <section id="ch__22" class="pml-chapter">
+                        <section id="ch__24" class="pml-chapter">
                             <h3 class="pml-chapter-title">Simple Config File</h3>
-                            <p class="pml-paragraph">A simple config file is just a map of key/value pairs.</p>
+                            <p class="pml-paragraph">A simple config file is just a (possibly nested) map of key/value pairs.</p>
                             <p class="pml-paragraph"><b class="pml-bold">JSON</b></p>
                             <p class="pml-paragraph">Here is an example in JSON:</p>
                             <pre class="pml-code"><code>{
-    &quot;size&quot;: &quot;XL&quot;,
-    &quot;color&quot;: &quot;light orange&quot;,
-    &quot;transparent&quot;: true
+    &quot;size&quot;:&quot;XL&quot;,
+    &quot;colors&quot;:{
+        &quot;background&quot;:&quot;black&quot;,
+        &quot;foreground&quot;:&quot;light green&quot;
+    },
+    &quot;transparent&quot;:true
 }</code></pre>
                             <p class="pml-paragraph">Remarks:</p>
-                            <p class="pml-paragraph">The need for quoting names is a bit annoying.</p>
-                            <p class="pml-paragraph">Another inconvenience is the comma required at the end of each assignment, <i class="pml-italic">except the last one</i>. Each time we add a parameter at the end of the list, there is a risk of forgetting to add a comma at the existing second-last line.</p>
+                            <p class="pml-paragraph">The need for quoting names and values is a bit annoying.</p>
+                            <p class="pml-paragraph">Another inconvenience is the comma required at the end of each assignment, <i class="pml-italic">except the last one</i>. Each time we add a parameter at the end of a list, there is a risk of forgetting to add a comma at the existing second-last line.</p>
                             <p class="pml-paragraph"><b class="pml-bold">XML</b></p>
-                            <p class="pml-paragraph">There are different ways to do this in XML. It's typically done like this:</p>
-                            <pre class="pml-code"><code>&lt;params&gt;
+                            <p class="pml-paragraph">The same config data look like this in XML:</p>
+                            <pre class="pml-code"><code>&lt;config&gt;
     &lt;size&gt;XL&lt;/size&gt;
-    &lt;color&gt;light orange&lt;/color&gt;
+    &lt;colors&gt;
+        &lt;background&gt;black&lt;/background&gt;
+        &lt;foreground&gt;light green&lt;/foreground&gt;
+    &lt;/colors&gt;
     &lt;transparent&gt;true&lt;/transparent&gt;
-&lt;/params&gt;</code></pre>
+&lt;/config&gt;</code></pre>
                             <p class="pml-paragraph">Remark: The closing tags are noisy.</p>
+                            <p class="pml-paragraph">Alternative syntax, using attributes:</p>
+                            <pre class="pml-code"><code>&lt;config&gt;
+    &lt;size&gt;XL&lt;/size&gt;
+    &lt;colors background=&quot;black&quot; foreground=&quot;light green&quot; /&gt;
+    &lt;transparent&gt;true&lt;/transparent&gt;
+&lt;/config&gt;</code></pre>
+                            <p class="pml-paragraph">Remark: Both syntaxes are not API-compatible. The change of using attributes instead of elements requires an update of the code that accesses the values of <code class="pml-inline-code">colors</code>.</p>
                             <p class="pml-paragraph"><b class="pml-bold">pXML</b></p>
                             <p class="pml-paragraph">The pXML version looks like this:</p>
-                            <pre class="pml-code"><code>[params
+                            <pre class="pml-code"><code>[config
     [size XL]
-    [color light orange]
+    [colors
+        [background black]
+        [foreground light green]
+    ]
     [transparent true]
 ]</code></pre>
-                            <p class="pml-paragraph">Remark: The <code class="pml-inline-code">[name value]</code> syntax might seem a bit strange at first. But it's (hopefully) easy to get used to it quickly.</p>
+                            <p class="pml-paragraph">Alternative syntax, using attributes:</p>
+                            <pre class="pml-code"><code>[config
+    [size XL]
+    [colors (background=black foreground=&quot;light green&quot;]
+    [transparent true]
+]</code></pre>
+                            <p class="pml-paragraph">Remark: Both syntaxes are API-compatible. The change of using attributes instead of elements does not require an update of the code that accesses the values of <code class="pml-inline-code">colors</code>.</p>
                             <p class="pml-paragraph"><b class="pml-bold">Verbosity</b></p>
-                            <p class="pml-paragraph">To compare the verbosity of the three syntaxes, let's consider the length of the markup code (excluding whitespace) needed for one parameter:</p>
+                            <p class="pml-paragraph">To compare the verbosity of the three syntaxes, let's consider the length of the markup code needed for one parameter (excluding whitespace):</p>
                             <table class="pml-table">
                                 <thead class="pml-table-header">
                                     <tr><th class="pml-table-header-cell">Language</th><th class="pml-table-header-cell">Markup</th><th class="pml-table-header-cell">Length</th><th class="pml-table-header-cell">Range</th><th class="pml-table-header-cell">Remark</th></tr>
                                 </thead>
                                 <tbody class="pml-table-body">
                                     <tr><td class="pml-table-body-cell">JSON</td><td class="pml-table-body-cell">&quot;&quot;:&quot;&quot;,</td><td class="pml-table-body-cell">6</td><td class="pml-table-body-cell">3 to 6</td><td class="pml-table-body-cell">-2 for integer, boolean, and null values (because they are not quoted); -1 for the last parameter (because it doesn't have a trailing comma)</td></tr>
-                                    <tr><td class="pml-table-body-cell">XML</td><td class="pml-table-body-cell">&lt;&gt;&lt;/size&gt;</td><td class="pml-table-body-cell">9</td><td class="pml-table-body-cell">min. 6</td><td class="pml-table-body-cell">The length depends on the number of characters in the name</td></tr>
-                                    <tr><td class="pml-table-body-cell">pXML</td><td class="pml-table-body-cell">[]</td><td class="pml-table-body-cell">2</td><td class="pml-table-body-cell">always 2</td><td class="pml-table-body-cell"></td></tr>
+                                    <tr><td class="pml-table-body-cell">XML element</td><td class="pml-table-body-cell">&lt;&gt;&lt;/size&gt;</td><td class="pml-table-body-cell">9</td><td class="pml-table-body-cell">min. 6</td><td class="pml-table-body-cell">The length depends on the number of characters in the name</td></tr>
+                                    <tr><td class="pml-table-body-cell">XML attribute</td><td class="pml-table-body-cell">=&quot;&quot;</td><td class="pml-table-body-cell">3</td><td class="pml-table-body-cell">always 3</td><td class="pml-table-body-cell"></td></tr>
+                                    <tr><td class="pml-table-body-cell">pXML element</td><td class="pml-table-body-cell">[]</td><td class="pml-table-body-cell">2</td><td class="pml-table-body-cell">always 2</td><td class="pml-table-body-cell"></td></tr>
+                                    <tr><td class="pml-table-body-cell">pXML attribute</td><td class="pml-table-body-cell">= or =&quot;&quot;</td><td class="pml-table-body-cell">1 or 3</td><td class="pml-table-body-cell">1 or 3</td><td class="pml-table-body-cell">The length is 1 if the value doesn't need to be quoted</td></tr>
                                 </tbody>
                             </table>
                             <p class="pml-paragraph"><b class="pml-bold">Conclusion</b></p>
-                            <p class="pml-paragraph">The most verbose syntax is XML (especially in case of long parameter names). The least verbose one is pXML with only 2 markup characters per parameter. Less noise implies 'easy to read and write for humans'.</p>
+                            <p class="pml-paragraph">The most verbose syntax is XML (especially in case of long parameter names). The least verbose one is pXML. Less noise implies 'easy to read and write for humans'.</p>
                         </section>
-                        <section id="ch__23" class="pml-chapter">
+                        <section id="ch__25" class="pml-chapter">
                             <h3 class="pml-chapter-title">HTML Code</h3>
                             <p class="pml-paragraph">Now we'll look at some HTML code - the most common use of XML. To keep the example short, we'll just look at an HTML snippet, leaving off the HTML header and footer.</p>
                             <p class="pml-paragraph"><b class="pml-bold">HTML</b></p>
@@ -921,18 +855,18 @@ pXML element:  [identifier 123]</code></pre>
     [h2 Harmonic States]
 
     [p The [i initial] state looks like this:]
-    [img [#src images/state_1.png]]
+    [img (src=images/state_1.png)]
 
     [p After just a few [i [b micro]seconds] the state changes.]
     
     [p More text ...]
 ]</code></pre>
                             <p class="pml-paragraph"><b class="pml-bold">PML</b></p>
-                            <p class="pml-paragraph">As said already, PML has a <a href="#lenient_PML" class="pml-xref">lenient syntax mode</a> that leads to very succinct markup code:</p>
+                            <p class="pml-paragraph">As said already, PML has a <a href="#lenient_PML" class="pml-xref">lenient syntax mode</a> that allows for very succinct markup code:</p>
                             <pre class="pml-code"><code>[ch Harmonic States
 
     The [i initial] state looks like this:
-    [img images/state_1.png]
+    [image images/state_1.png]
 
     After just a few [i [b micro]seconds] the state changes.
     
@@ -960,9 +894,9 @@ pXML element:  [identifier 123]</code></pre>
 
 HTML: &lt;section&gt;&lt;h2&gt;&lt;/h2&gt;&lt;p&gt;&lt;i&gt;&lt;/i&gt;&lt;/p&gt;&lt;imgsrc=&quot;&quot;/&gt;&lt;p&gt;&lt;i&gt;&lt;b&gt;&lt;/b&gt;&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/section&gt;
 
-pXML: [section[h2][p[i]][img[#src]][p[i[b]]][p]]
+pXML: [section[h2][p[i]][img(src=)][p[i[b]]][p]]
 
-PML:  [ch[i][img][i[b]]]</code></pre>
+PML:  [ch[i][image][i[b]]]</code></pre>
                             <p class="pml-paragraph">Counting the number of characters gives us the following table:</p>
                             <table class="pml-table">
                                 <thead class="pml-table-header">
@@ -972,7 +906,7 @@ PML:  [ch[i][img][i[b]]]</code></pre>
                                     <tr><td class="pml-table-body-cell">JSON</td><td class="pml-table-body-cell">108</td><td class="pml-table-body-cell">132%</td></tr>
                                     <tr><td class="pml-table-body-cell">HTML</td><td class="pml-table-body-cell">82</td><td class="pml-table-body-cell">100%</td></tr>
                                     <tr><td class="pml-table-body-cell">pXML</td><td class="pml-table-body-cell">42</td><td class="pml-table-body-cell">51%</td></tr>
-                                    <tr><td class="pml-table-body-cell">PML</td><td class="pml-table-body-cell">18</td><td class="pml-table-body-cell">22%</td></tr>
+                                    <tr><td class="pml-table-body-cell">PML</td><td class="pml-table-body-cell">20</td><td class="pml-table-body-cell">24%</td></tr>
                                 </tbody>
                             </table>
                             <p class="pml-paragraph">A graph of these numbers looks like this:</p>
@@ -982,7 +916,7 @@ PML:  [ch[i][img][i[b]]]</code></pre>
                             <p class="pml-paragraph">Of course this is not a representative result. Other HTML examples would lead to more or less different numbers. However, it clearly shows the impact of syntax. Syntax affects complexity, space and time, and usability. Succinct syntax makes it easier and more enjoyable to read and write code.</p>
                         </section>
                     </section>
-                    <section id="ch__24" class="pml-chapter">
+                    <section id="ch__26" class="pml-chapter">
                         <h2 class="pml-chapter-title">Syntax Comparison</h2>
                         <p class="pml-paragraph">Here is a brief comparison of the XML vs pXML syntax:</p>
                         <p class="pml-paragraph">Empty element:</p>
@@ -1003,30 +937,12 @@ pXML: [ul
               [div A [i friendly] dog]
           ]
       ]</code></pre>
-                        <p class="pml-paragraph">Element with metadata:</p>
-                        <pre class="pml-code"><code>String metadata:
-XML:  &lt;div id = &quot;unplug_warning&quot; class = &quot;warning big-text&quot;&gt;Unplug power cord before opening!&lt;/div&gt;
-pXML: [div [#id unplug_warning] [#class warning big-text]Unplug power cord before opening!]
-
-Structured metadata:
-XML:  not supported
-pXML: 
-    [grid_cell
-        [#GUI_data
-            [grid_position
-                [line 10]
-                [column 2]
-            ]
-            [color
-                [text purple]
-                [background yellow]
-            ]
-        ]
-        [content Cell content]
-    ]        </code></pre>
+                        <p class="pml-paragraph">Attributes:</p>
+                        <pre class="pml-code"><code>XML:  &lt;div id=&quot;unplug_warning&quot; class=&quot;warning big-text&quot;&gt;Unplug power cord before opening!&lt;/div&gt;
+pXML: [div (id=unplug_warning class=&quot;warning big-text&quot;)Unplug power cord before opening!]</code></pre>
                         <p class="pml-paragraph">Escaping:</p>
-                        <pre class="pml-code"><code>XML:  note = &quot;Watch out for &amp;lt;, &amp;gt;, &amp;quot;, &amp;apos;, &amp;amp;, [, ], and \ characters&quot;
-pXML: [#note Watch out for &lt;, &gt;, &quot;, ', &amp;, \[, \], and \\ characters]    </code></pre>
+                        <pre class="pml-code"><code>XML:  &lt;note&gt;Watch out for &amp;lt;, &amp;gt;, &amp;quot;, &amp;apos;, &amp;amp;, [, ], and \ characters&lt;/note&gt;
+pXML: [note Watch out for &lt;, &gt;, &quot;, ', &amp;, \[, \], and \\ characters]    </code></pre>
                         <p class="pml-paragraph">Comments:</p>
                         <pre class="pml-code"><code>Single comment:
 XML:  &lt;!-- text --&gt;
@@ -1036,41 +952,53 @@ Nested comments:
 XML:  not supported
 pXML: [- text [- nested -] -]</code></pre>
                     </section>
-                    <section id="ch__25" class="pml-chapter">
+                    <section id="ch__27" class="pml-chapter">
                         <h2 class="pml-chapter-title">Summary And Conclusion</h2>
                         <p class="pml-paragraph">As demonstrated, it <i class="pml-italic">is</i> possible to simplify the XML syntax and make it more accessible for humans.</p>
-                        <p class="pml-paragraph">The pXML syntax introduced in this article essentially suggests two improvements:</p>
+                        <p class="pml-paragraph">The pXML syntax introduced in this article essentially suggests three changes:</p>
                         <ul class="pml-list">
                             <li class="pml-list-element">
                                 <p class="pml-paragraph">Replace the XML syntax:</p>
                                 <pre class="pml-code"><code>&lt;name&gt;value&lt;/name&gt;</code></pre>
                                 <p class="pml-paragraph">... with:</p>
                                 <pre class="pml-code"><code>[name value]</code></pre>
+                                <figure style="text-align: left">
+                                    <img alt="From XML to pXML" class="pml-image" src="images/n_v.png" width="400" />
+                                </figure>
                             </li>
                             <li class="pml-list-element">
-                                <p class="pml-paragraph">Remove attributes and use the <code class="pml-inline-code">#</code> element name prefix to make a distinction between data and metadata.</p>
+                                <p class="pml-paragraph">Embed attributes between parenthesis and allow unquoted values if possible.</p>
                                 <p class="pml-paragraph">The XML code:</p>
-                                <pre class="pml-code"><code>name = &quot;value&quot;</code></pre>
+                                <pre class="pml-code"><code>name1=&quot;value&quot; name2=&quot;value with spaces&quot;</code></pre>
                                 <p class="pml-paragraph">... becomes:</p>
-                                <pre class="pml-code"><code>[#name value]</code></pre>
-                            </li>
-                        </ul>
-                        <p class="pml-paragraph">The following picture illustrates the simplification achieved with pXML:</p>
-                        <figure style="text-align: center">
-                            <img alt="From XML to pXML" class="pml-image" src="images/n_v.png" width="400" />
-                        </figure>
-                        <p class="pml-paragraph">Although the pXML syntax is less verbose and less complex, it does not make XML less powerful. Once a pXML document is parsed into an XML tree, the whole set of great additions that are part of the XML ecosystem can still be used: documents can be validated, queried, modified, and transformed.</p>
-                        <p class="pml-paragraph">pXML also adds two features not supported in XML:</p>
-                        <ul class="pml-list">
-                            <li class="pml-list-element">
-                                <p class="pml-paragraph">Metadata can contain structured data, instead of just strings.</p>
+                                <pre class="pml-code"><code>(name1=value name2=&quot;value with spaces&quot;)</code></pre>
                             </li>
                             <li class="pml-list-element">
-                                <p class="pml-paragraph">Comments can be nested.</p>
+                                <p class="pml-paragraph">Support for nested comments (not supported in XML)</p>
                             </li>
                         </ul>
+                        <p class="pml-paragraph">Although the pXML syntax is less verbose and different from XML, all great additions that are part of the XML ecosystem can still be used. Once a pXML document is parsed into an XML tree, documents can be validated, queried, modified, and transformed.</p>
                         <p class="pml-paragraph">Well designed syntax increases productivity, reduces errors, eases maintenance, and improves space and time efficiency.</p>
                         <p class="pml-paragraph">Syntax matters!</p>
+                    </section>
+                    <section id="ch__28" class="pml-chapter">
+                        <h2 class="pml-chapter-title">Article History</h2>
+                        <ul class="pml-list">
+                            <li class="pml-list-element">
+                                <p class="pml-paragraph">2021-03-10: First version</p>
+                            </li>
+                            <li class="pml-list-element">
+                                <p class="pml-paragraph">2021-04-20:</p>
+                                <ul class="pml-list">
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">added attributes syntax</p>
+                                    </li>
+                                    <li class="pml-list-element">
+                                        <p class="pml-paragraph">removed optional name prefix <code class="pml-inline-code">#</code> (used to differentiate between data and metadata)</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </section>
                 </article>
                 <aside class="pml-doc-right">
