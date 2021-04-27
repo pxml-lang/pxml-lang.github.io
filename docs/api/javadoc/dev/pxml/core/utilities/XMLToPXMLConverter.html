@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9};
+var data = {"i0":9,"i1":9,"i2":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -176,10 +176,16 @@ extends java.lang.Object</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pipeXMLReaderToPXMLWriter(java.io.Reader,java.io.Writer)">pipeXMLReaderToPXMLWriter</a></span>&#8203;(java.io.Reader&nbsp;XMLReader,
-                         java.io.Writer&nbsp;pXMLStringWriter)</code></th>
+                         java.io.Writer&nbsp;pXMLWriter)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#XMLDocumentToPXML(org.w3c.dom.Document,java.io.Writer)">XMLDocumentToPXML</a></span>&#8203;(org.w3c.dom.Document&nbsp;XMLDocument,
+                 java.io.Writer&nbsp;pXMLWriter)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#XMLFileToPXMLFile(java.io.File,java.io.File)">XMLFileToPXMLFile</a></span>&#8203;(java.io.File&nbsp;XMLFile,
                  java.io.File&nbsp;pXMLFile)</code></th>
@@ -246,12 +252,27 @@ extends java.lang.Object</pre>
 <a id="pipeXMLReaderToPXMLWriter(java.io.Reader,java.io.Writer)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>pipeXMLReaderToPXMLWriter</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;pipeXMLReaderToPXMLWriter&#8203;(java.io.Reader&nbsp;XMLReader,
-                                             java.io.Writer&nbsp;pXMLStringWriter)
+                                             java.io.Writer&nbsp;pXMLWriter)
                                       throws java.lang.Exception</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Exception</code></dd>
+</dl>
+</li>
+</ul>
+<a id="XMLDocumentToPXML(org.w3c.dom.Document,java.io.Writer)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>XMLDocumentToPXML</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;XMLDocumentToPXML&#8203;(org.w3c.dom.Document&nbsp;XMLDocument,
+                                     java.io.Writer&nbsp;pXMLWriter)
+                              throws java.lang.Exception</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Exception</code></dd>

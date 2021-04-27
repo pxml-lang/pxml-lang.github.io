@@ -180,27 +180,27 @@ implements <a href="IEventStreamParser.html" title="interface in dev.pxml.core.r
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(dev.pxml.core.reader.tokenizer.ITokenizer,dev.pxml.core.reader.parser.eventHandler.IParserEventHandler)">parse</a></span>&#8203;(<a href="../tokenizer/ITokenizer.html" title="interface in dev.pxml.core.reader.tokenizer">ITokenizer</a>&nbsp;tokenizer,
-     <a href="eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(dev.pxml.core.reader.tokenizer.ITokenizer,dev.pxml.core.reader.parser.eventHandler.IParserEventsHandler)">parse</a></span>&#8203;(<a href="../tokenizer/ITokenizer.html" title="interface in dev.pxml.core.reader.tokenizer">ITokenizer</a>&nbsp;tokenizer,
+     <a href="eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.io.File,dev.pxml.core.reader.parser.eventHandler.IParserEventHandler)">parse</a></span>&#8203;(java.io.File&nbsp;file,
-     <a href="eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.io.File,dev.pxml.core.reader.parser.eventHandler.IParserEventsHandler)">parse</a></span>&#8203;(java.io.File&nbsp;file,
+     <a href="eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.io.Reader,dev.pxml.core.reader.parser.eventHandler.IParserEventHandler,java.lang.Object)">parse</a></span>&#8203;(java.io.Reader&nbsp;reader,
-     <a href="eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.io.Reader,dev.pxml.core.reader.parser.eventHandler.IParserEventsHandler,java.lang.Object)">parse</a></span>&#8203;(java.io.Reader&nbsp;reader,
+     <a href="eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler,
      java.lang.Object&nbsp;resource)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.lang.String,dev.pxml.core.reader.parser.eventHandler.IParserEventHandler,java.lang.Object)">parse</a></span>&#8203;(java.lang.String&nbsp;string,
-     <a href="eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parse(java.lang.String,dev.pxml.core.reader.parser.eventHandler.IParserEventsHandler,java.lang.Object)">parse</a></span>&#8203;(java.lang.String&nbsp;string,
+     <a href="eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler,
      java.lang.Object&nbsp;resource)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -247,71 +247,71 @@ implements <a href="IEventStreamParser.html" title="interface in dev.pxml.core.r
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="parse(dev.pxml.core.reader.tokenizer.ITokenizer,dev.pxml.core.reader.parser.eventHandler.IParserEventHandler)">
+<a id="parse(dev.pxml.core.reader.tokenizer.ITokenizer,dev.pxml.core.reader.parser.eventHandler.IParserEventsHandler)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>parse</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;parse&#8203;(<a href="../tokenizer/ITokenizer.html" title="interface in dev.pxml.core.reader.tokenizer">ITokenizer</a>&nbsp;tokenizer,
-                  <a href="eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler)
+                  <a href="eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler)
            throws java.lang.Exception</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IEventStreamParser.html#parse(dev.pxml.core.reader.tokenizer.ITokenizer,dev.pxml.core.reader.parser.eventHandler.IParserEventHandler)">parse</a></code>&nbsp;in interface&nbsp;<code><a href="IEventStreamParser.html" title="interface in dev.pxml.core.reader.parser">IEventStreamParser</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;</code></dd>
+<dd><code><a href="IEventStreamParser.html#parse(dev.pxml.core.reader.tokenizer.ITokenizer,dev.pxml.core.reader.parser.eventHandler.IParserEventsHandler)">parse</a></code>&nbsp;in interface&nbsp;<code><a href="IEventStreamParser.html" title="interface in dev.pxml.core.reader.parser">IEventStreamParser</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Exception</code></dd>
 </dl>
 </li>
 </ul>
-<a id="parse(java.io.Reader,dev.pxml.core.reader.parser.eventHandler.IParserEventHandler,java.lang.Object)">
+<a id="parse(java.io.Reader,dev.pxml.core.reader.parser.eventHandler.IParserEventsHandler,java.lang.Object)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>parse</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;parse&#8203;(java.io.Reader&nbsp;reader,
-                  <a href="eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler,
+                  <a href="eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler,
                   java.lang.Object&nbsp;resource)
            throws java.lang.Exception</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IEventStreamParser.html#parse(java.io.Reader,dev.pxml.core.reader.parser.eventHandler.IParserEventHandler,java.lang.Object)">parse</a></code>&nbsp;in interface&nbsp;<code><a href="IEventStreamParser.html" title="interface in dev.pxml.core.reader.parser">IEventStreamParser</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;</code></dd>
+<dd><code><a href="IEventStreamParser.html#parse(java.io.Reader,dev.pxml.core.reader.parser.eventHandler.IParserEventsHandler,java.lang.Object)">parse</a></code>&nbsp;in interface&nbsp;<code><a href="IEventStreamParser.html" title="interface in dev.pxml.core.reader.parser">IEventStreamParser</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Exception</code></dd>
 </dl>
 </li>
 </ul>
-<a id="parse(java.lang.String,dev.pxml.core.reader.parser.eventHandler.IParserEventHandler,java.lang.Object)">
+<a id="parse(java.lang.String,dev.pxml.core.reader.parser.eventHandler.IParserEventsHandler,java.lang.Object)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>parse</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;parse&#8203;(java.lang.String&nbsp;string,
-                  <a href="eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler,
+                  <a href="eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler,
                   java.lang.Object&nbsp;resource)
            throws java.lang.Exception</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IEventStreamParser.html#parse(java.lang.String,dev.pxml.core.reader.parser.eventHandler.IParserEventHandler,java.lang.Object)">parse</a></code>&nbsp;in interface&nbsp;<code><a href="IEventStreamParser.html" title="interface in dev.pxml.core.reader.parser">IEventStreamParser</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;</code></dd>
+<dd><code><a href="IEventStreamParser.html#parse(java.lang.String,dev.pxml.core.reader.parser.eventHandler.IParserEventsHandler,java.lang.Object)">parse</a></code>&nbsp;in interface&nbsp;<code><a href="IEventStreamParser.html" title="interface in dev.pxml.core.reader.parser">IEventStreamParser</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Exception</code></dd>
 </dl>
 </li>
 </ul>
-<a id="parse(java.io.File,dev.pxml.core.reader.parser.eventHandler.IParserEventHandler)">
+<a id="parse(java.io.File,dev.pxml.core.reader.parser.eventHandler.IParserEventsHandler)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>parse</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;parse&#8203;(java.io.File&nbsp;file,
-                  <a href="eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler)
+                  <a href="eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;&nbsp;eventHandler)
            throws java.lang.Exception</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IEventStreamParser.html#parse(java.io.File,dev.pxml.core.reader.parser.eventHandler.IParserEventHandler)">parse</a></code>&nbsp;in interface&nbsp;<code><a href="IEventStreamParser.html" title="interface in dev.pxml.core.reader.parser">IEventStreamParser</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;</code></dd>
+<dd><code><a href="IEventStreamParser.html#parse(java.io.File,dev.pxml.core.reader.parser.eventHandler.IParserEventsHandler)">parse</a></code>&nbsp;in interface&nbsp;<code><a href="IEventStreamParser.html" title="interface in dev.pxml.core.reader.parser">IEventStreamParser</a>&lt;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">N</a>,&#8203;<a href="EventStreamParser.html" title="type parameter in EventStreamParser">R</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Exception</code></dd>
 </dl>

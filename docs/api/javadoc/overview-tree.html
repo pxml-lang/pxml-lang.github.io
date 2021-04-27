@@ -97,14 +97,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="horizontal">
 <li><a href="dev/pxml/core/package-tree.html">dev.pxml.core</a>, </li>
 <li><a href="dev/pxml/core/data/node/package-tree.html">dev.pxml.core.data.node</a>, </li>
-<li><a href="dev/pxml/core/data/node/location/package-tree.html">dev.pxml.core.data.node.location</a>, </li>
 <li><a href="dev/pxml/core/data/node/name/package-tree.html">dev.pxml.core.data.node.name</a>, </li>
 <li><a href="dev/pxml/core/data/node/value/package-tree.html">dev.pxml.core.data.node.value</a>, </li>
 <li><a href="dev/pxml/core/reader/error/package-tree.html">dev.pxml.core.reader.error</a>, </li>
 <li><a href="dev/pxml/core/reader/parser/package-tree.html">dev.pxml.core.reader.parser</a>, </li>
 <li><a href="dev/pxml/core/reader/parser/eventHandler/package-tree.html">dev.pxml.core.reader.parser.eventHandler</a>, </li>
+<li><a href="dev/pxml/core/reader/reader/package-tree.html">dev.pxml.core.reader.reader</a>, </li>
 <li><a href="dev/pxml/core/reader/tokenizer/package-tree.html">dev.pxml.core.reader.tokenizer</a>, </li>
-<li><a href="dev/pxml/core/reader/tokenizer/token/package-tree.html">dev.pxml.core.reader.tokenizer.token</a>, </li>
 <li><a href="dev/pxml/core/utilities/package-tree.html">dev.pxml.core.utilities</a>, </li>
 <li><a href="dev/pxml/core/utilities/annotations/package-tree.html">dev.pxml.core.utilities.annotations</a>, </li>
 <li><a href="dev/pxml/core/writer/package-tree.html">dev.pxml.core.writer</a></li>
@@ -117,28 +116,38 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">java.lang.Object
 <ul>
 <li class="circle">dev.pxml.core.<a href="dev/pxml/core/Constants.html" title="class in dev.pxml.core"><span class="typeNameLink">Constants</span></a></li>
-<li class="circle">dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/CreateAST_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler"><span class="typeNameLink">CreateAST_ParserEventHandler</span></a> (implements dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;N,&#8203;R&gt;)</li>
-<li class="circle">dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/CreateDOM_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler"><span class="typeNameLink">CreateDOM_ParserEventHandler</span></a> (implements dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;N,&#8203;R&gt;)</li>
-<li class="circle">dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/Debugger_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler"><span class="typeNameLink">Debugger_ParserEventHandler</span></a> (implements dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;N,&#8203;R&gt;)</li>
-<li class="circle">dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/DoNothing_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler"><span class="typeNameLink">DoNothing_ParserEventHandler</span></a> (implements dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;N,&#8203;R&gt;)
+<li class="circle">dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/CreateAST_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler"><span class="typeNameLink">CreateAST_ParserEventHandler</span></a> (implements dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;N,&#8203;R&gt;)</li>
+<li class="circle">dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/CreateDOM_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler"><span class="typeNameLink">CreateDOM_ParserEventHandler</span></a> (implements dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;N,&#8203;R&gt;)</li>
+<li class="circle">dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/DoNothing_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler"><span class="typeNameLink">DoNothing_ParserEventHandler</span></a> (implements dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;N,&#8203;R&gt;)
 <ul>
 <li class="circle">dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/Timer_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler"><span class="typeNameLink">Timer_ParserEventHandler</span></a></li>
 </ul>
 </li>
 <li class="circle">dev.pxml.core.reader.parser.<a href="dev/pxml/core/reader/parser/EventStreamParser.html" title="class in dev.pxml.core.reader.parser"><span class="typeNameLink">EventStreamParser</span></a>&lt;N,&#8203;R&gt; (implements dev.pxml.core.reader.parser.<a href="dev/pxml/core/reader/parser/IEventStreamParser.html" title="interface in dev.pxml.core.reader.parser">IEventStreamParser</a>&lt;N,&#8203;R&gt;)</li>
 <li class="circle">dev.pxml.core.reader.parser.<a href="dev/pxml/core/reader/parser/EventStreamParserUtilities.html" title="class in dev.pxml.core.reader.parser"><span class="typeNameLink">EventStreamParserUtilities</span></a></li>
-<li class="circle">dev.pxml.core.data.node.<a href="dev/pxml/core/data/node/NodeBase.html" title="class in dev.pxml.core.data.node"><span class="typeNameLink">NodeBase</span></a>
-<ul>
-<li class="circle">dev.pxml.core.data.node.<a href="dev/pxml/core/data/node/EmptyNode.html" title="class in dev.pxml.core.data.node"><span class="typeNameLink">EmptyNode</span></a></li>
-<li class="circle">dev.pxml.core.data.node.<a href="dev/pxml/core/data/node/NonEmptyNode.html" title="class in dev.pxml.core.data.node"><span class="typeNameLink">NonEmptyNode</span></a></li>
-</ul>
-</li>
+<li class="circle">dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/Logger_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler"><span class="typeNameLink">Logger_ParserEventHandler</span></a> (implements dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;N,&#8203;R&gt;)</li>
 <li class="circle">dev.pxml.core.data.node.name.<a href="dev/pxml/core/data/node/name/NodeName.html" title="class in dev.pxml.core.data.node.name"><span class="typeNameLink">NodeName</span></a></li>
 <li class="circle">dev.pxml.core.<a href="dev/pxml/core/PXMLConverter.html" title="class in dev.pxml.core"><span class="typeNameLink">PXMLConverter</span></a></li>
-<li class="circle">dev.pxml.core.reader.tokenizer.token.<a href="dev/pxml/core/reader/tokenizer/token/PXMLToken.html" title="class in dev.pxml.core.reader.tokenizer.token"><span class="typeNameLink">PXMLToken</span></a></li>
+<li class="circle">dev.pxml.core.data.node.<a href="dev/pxml/core/data/node/PXMLNode.html" title="class in dev.pxml.core.data.node"><span class="typeNameLink">PXMLNode</span></a>
+<ul>
+<li class="circle">dev.pxml.core.data.node.<a href="dev/pxml/core/data/node/EmptyPXMLNode.html" title="class in dev.pxml.core.data.node"><span class="typeNameLink">EmptyPXMLNode</span></a></li>
+<li class="circle">dev.pxml.core.data.node.<a href="dev/pxml/core/data/node/NonEmptyPXMLNode.html" title="class in dev.pxml.core.data.node"><span class="typeNameLink">NonEmptyPXMLNode</span></a></li>
+</ul>
+</li>
 <li class="circle">dev.pxml.core.utilities.<a href="dev/pxml/core/utilities/PXMLToXMLConverter.html" title="class in dev.pxml.core.utilities"><span class="typeNameLink">PXMLToXMLConverter</span></a></li>
 <li class="circle">dev.pxml.core.writer.<a href="dev/pxml/core/writer/PXMLWriter.html" title="class in dev.pxml.core.writer"><span class="typeNameLink">PXMLWriter</span></a> (implements dev.pxml.core.writer.<a href="dev/pxml/core/writer/IPXMLWriter.html" title="interface in dev.pxml.core.writer">IPXMLWriter</a>)</li>
-<li class="circle">dev.pxml.core.data.node.location.<a href="dev/pxml/core/data/node/location/TextLocation.html" title="class in dev.pxml.core.data.node.location"><span class="typeNameLink">TextLocation</span></a></li>
+<li class="circle">java.io.Reader (implements java.io.Closeable, java.lang.Readable)
+<ul>
+<li class="circle">dev.pxml.core.reader.reader.<a href="dev/pxml/core/reader/reader/AReaderWithLocation.html" title="class in dev.pxml.core.reader.reader"><span class="typeNameLink">AReaderWithLocation</span></a>
+<ul>
+<li class="circle">dev.pxml.core.reader.reader.<a href="dev/pxml/core/reader/reader/ReaderWithLocation.html" title="class in dev.pxml.core.reader.reader"><span class="typeNameLink">ReaderWithLocation</span></a></li>
+<li class="circle">dev.pxml.core.reader.reader.<a href="dev/pxml/core/reader/reader/ReaderWithLocationZero.html" title="class in dev.pxml.core.reader.reader"><span class="typeNameLink">ReaderWithLocationZero</span></a></li>
+<li class="circle">dev.pxml.core.reader.reader.<a href="dev/pxml/core/reader/reader/StackedReaderWithLocation.html" title="class in dev.pxml.core.reader.reader"><span class="typeNameLink">StackedReaderWithLocation</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="circle">dev.pxml.core.reader.reader.<a href="dev/pxml/core/reader/reader/TextLocation.html" title="class in dev.pxml.core.reader.reader"><span class="typeNameLink">TextLocation</span></a></li>
 <li class="circle">java.lang.Throwable (implements java.io.Serializable)
 <ul>
 <li class="circle">java.lang.Exception
@@ -160,10 +169,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">dev.pxml.core.data.node.value.<a href="dev/pxml/core/data/node/value/Text_ValueElement.html" title="class in dev.pxml.core.data.node.value"><span class="typeNameLink">Text_ValueElement</span></a></li>
 </ul>
 </li>
-<li class="circle">dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/WriteXML_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler"><span class="typeNameLink">WriteXML_ParserEventHandler</span></a> (implements dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;N,&#8203;R&gt;)</li>
+<li class="circle">dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/WriteXML_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler"><span class="typeNameLink">WriteXML_ParserEventHandler</span></a> (implements dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;N,&#8203;R&gt;)</li>
+<li class="circle">dev.pxml.core.utilities.<a href="dev/pxml/core/utilities/XMLSchemaValidator.html" title="class in dev.pxml.core.utilities"><span class="typeNameLink">XMLSchemaValidator</span></a></li>
 <li class="circle">dev.pxml.core.utilities.<a href="dev/pxml/core/utilities/XMLToPXMLConverter.html" title="class in dev.pxml.core.utilities"><span class="typeNameLink">XMLToPXMLConverter</span></a></li>
-<li class="circle">dev.pxml.core.utilities.<a href="dev/pxml/core/utilities/XMLToPXMLConverterOld.html" title="class in dev.pxml.core.utilities"><span class="typeNameLink">XMLToPXMLConverterOld</span></a></li>
 <li class="circle">dev.pxml.core.utilities.<a href="dev/pxml/core/utilities/XMLUtilities.html" title="class in dev.pxml.core.utilities"><span class="typeNameLink">XMLUtilities</span></a></li>
+<li class="circle">dev.pxml.core.utilities.<a href="dev/pxml/core/utilities/XSLTTransformer.html" title="class in dev.pxml.core.utilities"><span class="typeNameLink">XSLTTransformer</span></a></li>
 </ul>
 </li>
 </ul>
@@ -172,7 +182,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
 <li class="circle">dev.pxml.core.reader.parser.<a href="dev/pxml/core/reader/parser/IEventStreamParser.html" title="interface in dev.pxml.core.reader.parser"><span class="typeNameLink">IEventStreamParser</span></a>&lt;N,&#8203;R&gt;</li>
-<li class="circle">dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler"><span class="typeNameLink">IParserEventHandler</span></a>&lt;N,&#8203;R&gt;</li>
+<li class="circle">dev.pxml.core.reader.parser.eventHandler.<a href="dev/pxml/core/reader/parser/eventHandler/IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler"><span class="typeNameLink">IParserEventsHandler</span></a>&lt;N,&#8203;R&gt;</li>
 <li class="circle">dev.pxml.core.writer.<a href="dev/pxml/core/writer/IPXMLWriter.html" title="interface in dev.pxml.core.writer"><span class="typeNameLink">IPXMLWriter</span></a></li>
 <li class="circle">dev.pxml.core.reader.tokenizer.<a href="dev/pxml/core/reader/tokenizer/ITokenizer.html" title="interface in dev.pxml.core.reader.tokenizer"><span class="typeNameLink">ITokenizer</span></a></li>
 </ul>

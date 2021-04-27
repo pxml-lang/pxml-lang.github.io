@@ -131,7 +131,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</code></dd>
+<dd><code><a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -140,7 +140,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">DoNothing_ParserEventHandler</span>
 extends java.lang.Object
-implements <a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</pre>
+implements <a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</pre>
 </li>
 </ul>
 </div>
@@ -189,30 +189,30 @@ implements <a href="IParserEventHandler.html" title="interface in dev.pxml.core.
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onComment(java.lang.String,dev.pxml.core.data.node.NodeBase,dev.pxml.core.data.node.location.TextLocation)">onComment</a></span>&#8203;(java.lang.String&nbsp;comment,
-         <a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;parentNode,
-         <a href="../../../data/node/location/TextLocation.html" title="class in dev.pxml.core.data.node.location">TextLocation</a>&nbsp;location)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onComment(java.lang.String,dev.pxml.core.data.node.PXMLNode,dev.pxml.core.reader.reader.TextLocation)">onComment</a></span>&#8203;(java.lang.String&nbsp;comment,
+         <a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;parentNode,
+         <a href="../../reader/TextLocation.html" title="class in dev.pxml.core.reader.reader">TextLocation</a>&nbsp;location)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onNodeEnd(dev.pxml.core.data.node.NodeBase)">onNodeEnd</a></span>&#8203;(<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;node)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onNodeEnd(dev.pxml.core.data.node.PXMLNode)">onNodeEnd</a></span>&#8203;(<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;node)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onNodeStart(dev.pxml.core.data.node.NodeBase,dev.pxml.core.data.node.NodeBase)">onNodeStart</a></span>&#8203;(<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;node,
-           <a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;parentNode)</code></th>
+<td class="colFirst"><code><a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onNodeStart(dev.pxml.core.data.node.PXMLNode,dev.pxml.core.data.node.PXMLNode)">onNodeStart</a></span>&#8203;(<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;node,
+           <a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;parentNode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onRootNodeEnd(dev.pxml.core.data.node.NodeBase)">onRootNodeEnd</a></span>&#8203;(<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;node)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onRootNodeEnd(dev.pxml.core.data.node.PXMLNode)">onRootNodeEnd</a></span>&#8203;(<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;node)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onRootNodeStart(dev.pxml.core.data.node.NodeBase)">onRootNodeStart</a></span>&#8203;(<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;node)</code></th>
+<td class="colFirst"><code><a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onRootNodeStart(dev.pxml.core.data.node.PXMLNode)">onRootNodeStart</a></span>&#8203;(<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;node)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
@@ -227,9 +227,9 @@ implements <a href="IParserEventHandler.html" title="interface in dev.pxml.core.
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onText(java.lang.String,dev.pxml.core.data.node.NodeBase,dev.pxml.core.data.node.location.TextLocation)">onText</a></span>&#8203;(java.lang.String&nbsp;text,
-      <a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;parentNode,
-      <a href="../../../data/node/location/TextLocation.html" title="class in dev.pxml.core.data.node.location">TextLocation</a>&nbsp;location)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onText(java.lang.String,dev.pxml.core.data.node.PXMLNode,dev.pxml.core.reader.reader.TextLocation)">onText</a></span>&#8203;(java.lang.String&nbsp;text,
+      <a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;parentNode,
+      <a href="../../reader/TextLocation.html" title="class in dev.pxml.core.reader.reader">TextLocation</a>&nbsp;location)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -284,7 +284,7 @@ implements <a href="IParserEventHandler.html" title="interface in dev.pxml.core.
 <pre class="methodSignature">public&nbsp;void&nbsp;onStart()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IParserEventHandler.html#onStart()">onStart</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</code></dd>
+<dd><code><a href="IParserEventsHandler.html#onStart()">onStart</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -297,90 +297,90 @@ implements <a href="IParserEventHandler.html" title="interface in dev.pxml.core.
 <pre class="methodSignature">public&nbsp;void&nbsp;onStop()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IParserEventHandler.html#onStop()">onStop</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</code></dd>
+<dd><code><a href="IParserEventsHandler.html#onStop()">onStop</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a id="onRootNodeStart(dev.pxml.core.data.node.NodeBase)">
+<a id="onRootNodeStart(dev.pxml.core.data.node.PXMLNode)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onRootNodeStart</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;onRootNodeStart&#8203;(<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;node)</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;onRootNodeStart&#8203;(<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;node)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IParserEventHandler.html#onRootNodeStart(dev.pxml.core.data.node.NodeBase)">onRootNodeStart</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</code></dd>
+<dd><code><a href="IParserEventsHandler.html#onRootNodeStart(dev.pxml.core.data.node.PXMLNode)">onRootNodeStart</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a id="onRootNodeEnd(dev.pxml.core.data.node.NodeBase)">
+<a id="onRootNodeEnd(dev.pxml.core.data.node.PXMLNode)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onRootNodeEnd</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;onRootNodeEnd&#8203;(<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;node)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;onRootNodeEnd&#8203;(<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;node)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IParserEventHandler.html#onRootNodeEnd(N)">onRootNodeEnd</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</code></dd>
+<dd><code><a href="IParserEventsHandler.html#onRootNodeEnd(N)">onRootNodeEnd</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a id="onNodeStart(dev.pxml.core.data.node.NodeBase,dev.pxml.core.data.node.NodeBase)">
+<a id="onNodeStart(dev.pxml.core.data.node.PXMLNode,dev.pxml.core.data.node.PXMLNode)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onNodeStart</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;onNodeStart&#8203;(<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;node,
-                            <a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;parentNode)</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;onNodeStart&#8203;(<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;node,
+                            <a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;parentNode)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IParserEventHandler.html#onNodeStart(dev.pxml.core.data.node.NodeBase,N)">onNodeStart</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</code></dd>
+<dd><code><a href="IParserEventsHandler.html#onNodeStart(dev.pxml.core.data.node.PXMLNode,N)">onNodeStart</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a id="onNodeEnd(dev.pxml.core.data.node.NodeBase)">
+<a id="onNodeEnd(dev.pxml.core.data.node.PXMLNode)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onNodeEnd</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;onNodeEnd&#8203;(<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;node)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;onNodeEnd&#8203;(<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;node)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IParserEventHandler.html#onNodeEnd(N)">onNodeEnd</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</code></dd>
+<dd><code><a href="IParserEventsHandler.html#onNodeEnd(N)">onNodeEnd</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a id="onText(java.lang.String,dev.pxml.core.data.node.NodeBase,dev.pxml.core.data.node.location.TextLocation)">
+<a id="onText(java.lang.String,dev.pxml.core.data.node.PXMLNode,dev.pxml.core.reader.reader.TextLocation)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onText</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;onText&#8203;(java.lang.String&nbsp;text,
-                   <a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;parentNode,
-                   <a href="../../../data/node/location/TextLocation.html" title="class in dev.pxml.core.data.node.location">TextLocation</a>&nbsp;location)</pre>
+                   <a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;parentNode,
+                   <a href="../../reader/TextLocation.html" title="class in dev.pxml.core.reader.reader">TextLocation</a>&nbsp;location)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IParserEventHandler.html#onText(java.lang.String,N,dev.pxml.core.data.node.location.TextLocation)">onText</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</code></dd>
+<dd><code><a href="IParserEventsHandler.html#onText(java.lang.String,N,dev.pxml.core.reader.reader.TextLocation)">onText</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a id="onComment(java.lang.String,dev.pxml.core.data.node.NodeBase,dev.pxml.core.data.node.location.TextLocation)">
+<a id="onComment(java.lang.String,dev.pxml.core.data.node.PXMLNode,dev.pxml.core.reader.reader.TextLocation)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onComment</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;onComment&#8203;(java.lang.String&nbsp;comment,
-                      <a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>&nbsp;parentNode,
-                      <a href="../../../data/node/location/TextLocation.html" title="class in dev.pxml.core.data.node.location">TextLocation</a>&nbsp;location)</pre>
+                      <a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>&nbsp;parentNode,
+                      <a href="../../reader/TextLocation.html" title="class in dev.pxml.core.reader.reader">TextLocation</a>&nbsp;location)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IParserEventHandler.html#onComment(java.lang.String,N,dev.pxml.core.data.node.location.TextLocation)">onComment</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</code></dd>
+<dd><code><a href="IParserEventsHandler.html#onComment(java.lang.String,N,dev.pxml.core.reader.reader.TextLocation)">onComment</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -393,7 +393,7 @@ implements <a href="IParserEventHandler.html" title="interface in dev.pxml.core.
 <pre class="methodSignature">public&nbsp;java.lang.String&nbsp;getResult()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IParserEventHandler.html#getResult()">getResult</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</code></dd>
+<dd><code><a href="IParserEventsHandler.html#getResult()">getResult</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</code></dd>
 </dl>
 </li>
 </ul>

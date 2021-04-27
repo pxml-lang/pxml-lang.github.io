@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -161,29 +161,17 @@ implements <a href="ITokenizer.html" title="interface in dev.pxml.core.reader.to
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.io.File,dev.pxml.core.data.node.location.TextLocation)">Tokenizer</a></span>&#8203;(java.io.File&nbsp;file,
-         <a href="../../data/node/location/TextLocation.html" title="class in dev.pxml.core.data.node.location">TextLocation</a>&nbsp;parentLocation)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.io.Reader,java.lang.Object,dev.pxml.core.data.node.location.TextLocation)">Tokenizer</a></span>&#8203;(java.io.Reader&nbsp;reader,
-         java.lang.Object&nbsp;resource,
-         <a href="../../data/node/location/TextLocation.html" title="class in dev.pxml.core.data.node.location">TextLocation</a>&nbsp;parentLocation)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">Tokenizer</a></span>&#8203;(java.lang.String&nbsp;string)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.Object)">Tokenizer</a></span>&#8203;(java.lang.String&nbsp;string,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.io.Reader,java.lang.Object)">Tokenizer</a></span>&#8203;(java.io.Reader&nbsp;reader,
          java.lang.Object&nbsp;resource)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">Tokenizer</a></span>&#8203;(java.lang.String&nbsp;string)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.Object,dev.pxml.core.data.node.location.TextLocation)">Tokenizer</a></span>&#8203;(java.lang.String&nbsp;string,
-         java.lang.Object&nbsp;resource,
-         <a href="../../data/node/location/TextLocation.html" title="class in dev.pxml.core.data.node.location">TextLocation</a>&nbsp;parentLocation)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.Object)">Tokenizer</a></span>&#8203;(java.lang.String&nbsp;string,
+         java.lang.Object&nbsp;resource)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -221,120 +209,100 @@ implements <a href="ITokenizer.html" title="interface in dev.pxml.core.reader.to
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#currentIndex()">currentIndex</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#currentLineNumber()">currentLineNumber</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../data/node/location/TextLocation.html" title="class in dev.pxml.core.data.node.location">TextLocation</a></code></td>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../reader/TextLocation.html" title="class in dev.pxml.core.reader.reader">TextLocation</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#currentLocation()">currentLocation</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getResource()">getResource</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAtChar(char)">isAtChar</a></span>&#8203;(char&nbsp;c)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAtSpaceOrTab()">isAtSpaceOrTab</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAtString(java.lang.String)">isAtString</a></span>&#8203;(java.lang.String&nbsp;s)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAtWhiteSpace()">isAtWhiteSpace</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEof()">isEof</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isNextChar(char)">isNextChar</a></span>&#8203;(char&nbsp;c)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#peekCurrentNChars(int)">peekCurrentNChars</a></span>&#8203;(int&nbsp;n)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>char</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#peekFirstCharAfterWhiteSpace(int)">peekFirstCharAfterWhiteSpace</a></span>&#8203;(int&nbsp;lookAhead)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>char</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#peekNextChar()">peekNextChar</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readAttributeValue()">readAttributeValue</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readComment()">readComment</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readName()">readName</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>char</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readNextChar()">readNextChar</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readQuotedAttributeValue()">readQuotedAttributeValue</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readText()">readText</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readUnquotedAttributeValue()">readUnquotedAttributeValue</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readWhiteSpace()">readWhiteSpace</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i24" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#skipComment()">skipComment</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#skipSpacesAndTabs()">skipSpacesAndTabs</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#skipWhiteSpace()">skipWhiteSpace</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
@@ -363,31 +331,14 @@ implements <a href="ITokenizer.html" title="interface in dev.pxml.core.reader.to
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(java.io.Reader,java.lang.Object,dev.pxml.core.data.node.location.TextLocation)">
+<a id="&lt;init&gt;(java.io.Reader,java.lang.Object)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Tokenizer</h4>
 <pre>public&nbsp;Tokenizer&#8203;(java.io.Reader&nbsp;reader,
-                 java.lang.Object&nbsp;resource,
-                 <a href="../../data/node/location/TextLocation.html" title="class in dev.pxml.core.data.node.location">TextLocation</a>&nbsp;parentLocation)
-          throws java.io.IOException</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
-</dl>
-</li>
-</ul>
-<a id="&lt;init&gt;(java.lang.String,java.lang.Object,dev.pxml.core.data.node.location.TextLocation)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>Tokenizer</h4>
-<pre>public&nbsp;Tokenizer&#8203;(java.lang.String&nbsp;string,
-                 java.lang.Object&nbsp;resource,
-                 <a href="../../data/node/location/TextLocation.html" title="class in dev.pxml.core.data.node.location">TextLocation</a>&nbsp;parentLocation)
+                 java.lang.Object&nbsp;resource)
           throws java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -417,21 +368,6 @@ implements <a href="ITokenizer.html" title="interface in dev.pxml.core.reader.to
 <li class="blockList">
 <h4>Tokenizer</h4>
 <pre>public&nbsp;Tokenizer&#8203;(java.lang.String&nbsp;string)
-          throws java.io.IOException</pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
-</dl>
-</li>
-</ul>
-<a id="&lt;init&gt;(java.io.File,dev.pxml.core.data.node.location.TextLocation)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>Tokenizer</h4>
-<pre>public&nbsp;Tokenizer&#8203;(java.io.File&nbsp;file,
-                 <a href="../../data/node/location/TextLocation.html" title="class in dev.pxml.core.data.node.location">TextLocation</a>&nbsp;parentLocation)
           throws java.io.IOException</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -534,23 +470,10 @@ implements <a href="ITokenizer.html" title="interface in dev.pxml.core.reader.to
 <ul class="blockList">
 <li class="blockList">
 <h4>currentLocation</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../data/node/location/TextLocation.html" title="class in dev.pxml.core.data.node.location">TextLocation</a>&nbsp;currentLocation()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../reader/TextLocation.html" title="class in dev.pxml.core.reader.reader">TextLocation</a>&nbsp;currentLocation()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="ITokenizer.html#currentLocation()">currentLocation</a></code>&nbsp;in interface&nbsp;<code><a href="ITokenizer.html" title="interface in dev.pxml.core.reader.tokenizer">ITokenizer</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="currentIndex()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>currentIndex</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;currentIndex()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ITokenizer.html#currentIndex()">currentIndex</a></code>&nbsp;in interface&nbsp;<code><a href="ITokenizer.html" title="interface in dev.pxml.core.reader.tokenizer">ITokenizer</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -564,22 +487,6 @@ implements <a href="ITokenizer.html" title="interface in dev.pxml.core.reader.to
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="ITokenizer.html#isAtChar(char)">isAtChar</a></code>&nbsp;in interface&nbsp;<code><a href="ITokenizer.html" title="interface in dev.pxml.core.reader.tokenizer">ITokenizer</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="isAtString(java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isAtString</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isAtString&#8203;(java.lang.String&nbsp;s)
-                   throws java.io.IOException</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ITokenizer.html#isAtString(java.lang.String)">isAtString</a></code>&nbsp;in interface&nbsp;<code><a href="ITokenizer.html" title="interface in dev.pxml.core.reader.tokenizer">ITokenizer</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
 </dl>
 </li>
 </ul>
@@ -626,22 +533,6 @@ implements <a href="ITokenizer.html" title="interface in dev.pxml.core.reader.to
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="ITokenizer.html#peekCurrentNChars(int)">peekCurrentNChars</a></code>&nbsp;in interface&nbsp;<code><a href="ITokenizer.html" title="interface in dev.pxml.core.reader.tokenizer">ITokenizer</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
-</dl>
-</li>
-</ul>
-<a id="peekFirstCharAfterWhiteSpace(int)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>peekFirstCharAfterWhiteSpace</h4>
-<pre class="methodSignature">public&nbsp;char&nbsp;peekFirstCharAfterWhiteSpace&#8203;(int&nbsp;lookAhead)
-                                  throws java.io.IOException</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ITokenizer.html#peekFirstCharAfterWhiteSpace(int)">peekFirstCharAfterWhiteSpace</a></code>&nbsp;in interface&nbsp;<code><a href="ITokenizer.html" title="interface in dev.pxml.core.reader.tokenizer">ITokenizer</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
 </dl>
@@ -760,22 +651,6 @@ implements <a href="ITokenizer.html" title="interface in dev.pxml.core.reader.to
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="ITokenizer.html#readUnquotedAttributeValue()">readUnquotedAttributeValue</a></code>&nbsp;in interface&nbsp;<code><a href="ITokenizer.html" title="interface in dev.pxml.core.reader.tokenizer">ITokenizer</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code></dd>
-</dl>
-</li>
-</ul>
-<a id="readWhiteSpace()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>readWhiteSpace</h4>
-<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;readWhiteSpace()
-                                throws java.io.IOException</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ITokenizer.html#readWhiteSpace()">readWhiteSpace</a></code>&nbsp;in interface&nbsp;<code><a href="ITokenizer.html" title="interface in dev.pxml.core.reader.tokenizer">ITokenizer</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code></dd>
 </dl>

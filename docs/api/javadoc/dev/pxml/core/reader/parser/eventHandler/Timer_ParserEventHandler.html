@@ -136,7 +136,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</code></dd>
+<dd><code><a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">Timer_ParserEventHandler</span>
@@ -198,7 +198,7 @@ extends <a href="DoNothing_ParserEventHandler.html" title="class in dev.pxml.cor
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;dev.pxml.core.reader.parser.eventHandler.<a href="DoNothing_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler">DoNothing_ParserEventHandler</a></h3>
-<code><a href="DoNothing_ParserEventHandler.html#getResult()">getResult</a>, <a href="DoNothing_ParserEventHandler.html#onComment(java.lang.String,dev.pxml.core.data.node.NodeBase,dev.pxml.core.data.node.location.TextLocation)">onComment</a>, <a href="DoNothing_ParserEventHandler.html#onNodeEnd(dev.pxml.core.data.node.NodeBase)">onNodeEnd</a>, <a href="DoNothing_ParserEventHandler.html#onNodeStart(dev.pxml.core.data.node.NodeBase,dev.pxml.core.data.node.NodeBase)">onNodeStart</a>, <a href="DoNothing_ParserEventHandler.html#onRootNodeEnd(dev.pxml.core.data.node.NodeBase)">onRootNodeEnd</a>, <a href="DoNothing_ParserEventHandler.html#onRootNodeStart(dev.pxml.core.data.node.NodeBase)">onRootNodeStart</a>, <a href="DoNothing_ParserEventHandler.html#onText(java.lang.String,dev.pxml.core.data.node.NodeBase,dev.pxml.core.data.node.location.TextLocation)">onText</a></code></li>
+<code><a href="DoNothing_ParserEventHandler.html#getResult()">getResult</a>, <a href="DoNothing_ParserEventHandler.html#onComment(java.lang.String,dev.pxml.core.data.node.PXMLNode,dev.pxml.core.reader.reader.TextLocation)">onComment</a>, <a href="DoNothing_ParserEventHandler.html#onNodeEnd(dev.pxml.core.data.node.PXMLNode)">onNodeEnd</a>, <a href="DoNothing_ParserEventHandler.html#onNodeStart(dev.pxml.core.data.node.PXMLNode,dev.pxml.core.data.node.PXMLNode)">onNodeStart</a>, <a href="DoNothing_ParserEventHandler.html#onRootNodeEnd(dev.pxml.core.data.node.PXMLNode)">onRootNodeEnd</a>, <a href="DoNothing_ParserEventHandler.html#onRootNodeStart(dev.pxml.core.data.node.PXMLNode)">onRootNodeStart</a>, <a href="DoNothing_ParserEventHandler.html#onText(java.lang.String,dev.pxml.core.data.node.PXMLNode,dev.pxml.core.reader.reader.TextLocation)">onText</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -251,7 +251,7 @@ extends <a href="DoNothing_ParserEventHandler.html" title="class in dev.pxml.cor
 <pre class="methodSignature">public&nbsp;void&nbsp;onStart()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IParserEventHandler.html#onStart()">onStart</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</code></dd>
+<dd><code><a href="IParserEventsHandler.html#onStart()">onStart</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="DoNothing_ParserEventHandler.html#onStart()">onStart</a></code>&nbsp;in class&nbsp;<code><a href="DoNothing_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler">DoNothing_ParserEventHandler</a></code></dd>
 </dl>
@@ -266,7 +266,7 @@ extends <a href="DoNothing_ParserEventHandler.html" title="class in dev.pxml.cor
 <pre class="methodSignature">public&nbsp;void&nbsp;onStop()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="IParserEventHandler.html#onStop()">onStop</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventHandler</a>&lt;<a href="../../../data/node/NodeBase.html" title="class in dev.pxml.core.data.node">NodeBase</a>,&#8203;java.lang.String&gt;</code></dd>
+<dd><code><a href="IParserEventsHandler.html#onStop()">onStop</a></code>&nbsp;in interface&nbsp;<code><a href="IParserEventsHandler.html" title="interface in dev.pxml.core.reader.parser.eventHandler">IParserEventsHandler</a>&lt;<a href="../../../data/node/PXMLNode.html" title="class in dev.pxml.core.data.node">PXMLNode</a>,&#8203;java.lang.String&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="DoNothing_ParserEventHandler.html#onStop()">onStop</a></code>&nbsp;in class&nbsp;<code><a href="DoNothing_ParserEventHandler.html" title="class in dev.pxml.core.reader.parser.eventHandler">DoNothing_ParserEventHandler</a></code></dd>
 </dl>
