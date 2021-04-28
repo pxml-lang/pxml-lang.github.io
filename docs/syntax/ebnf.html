@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PXML Syntax EBNF</title> 
+		<title>pXML Syntax EBNF</title> 
 
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="content-language" content="en-us">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="practicalXML - XML for humans.">
-		<meta name="keywords" content="practicalXML, PXML, XML">
+		<meta name="keywords" content="practicalXML, pXML, XML">
 
 		<link rel="stylesheet" href="../../css/pxml.css">
 		<link rel="icon" href="../../favicon.ico" type="image/x-icon" />
@@ -43,7 +43,7 @@
 		
 			<a href="../../index.html" class="no_link_decoration">
 			<div id="header">
-				<div id="header_name">PracticalXML (PXML)</div>
+				<div id="header_name">Practical XML (pXML)</div>
 				<div id="header_slogan">XML for humans</div>
 			</div>
 			</a>
@@ -67,9 +67,9 @@
 
 			<div id="content">
 
-				<h2>PXML Syntax EBNF</h2>
+				<h2>pXML Syntax EBNF</h2>
 
-                <p>The following table specifies PXML's basic syntax. Extensions like namespaces, metadata, etc. are not included.</p>
+                <p>The following table specifies pXML's basic syntax. Extensions like attributes, namespaces etc. are not included.</p>
 
                 <p>The syntax is also specified as <a href="railroad-diagrams.html">Railroad Diagrams</a>.</p>
                 
@@ -91,12 +91,12 @@
 
                 <blockquote>
                     <p>Note:</p>
-                    <p>A PXML <code>name</code> must follow the same rules as an XML name. The above regex (<code>[a-zA-Z][a-zA-Z0-9-_.]*</code>) is a simplified version of the <a href="https://www.w3.org/TR/REC-xml/#NT-NameStartChar">authoritative rules for XML names</a>. A simple description of the rules can be found in chapter "XML Naming Rules" of <a href="https://www.w3schools.com/xml/xml_elements.asp">XML Elements</a>.</p>
+                    <p>A pXML <code>name</code> must follow the same rules as an XML name. The above regex (<code>[a-zA-Z][a-zA-Z0-9-_.]*</code>) is a simplified version of the <a href="https://www.w3.org/TR/REC-xml/#NT-NameStartChar">authoritative rules for XML names</a>. A simple description of the rules can be found in chapter "XML Naming Rules" of <a href="https://www.w3schools.com/xml/xml_elements.asp">XML Elements</a>.</p>
                 </blockquote>
 
-                <p>As can be seen from the above rules, PXML's basic grammar is very simple. This makes it easy to write a basic parser in any programming language.</p>
+                <p>As can be seen from the above rules, pXML's basic grammar is very simple. This makes it easy to write a basic parser in any programming language.</p>
 
-                <p>A PXML document is a tree of nodes. Each node has a name, and an optional ordered list of texts (leaf nodes) and/or child-nodes (branch nodes). This simple structure allows to store any dataset of any complexity, such as maps (key/value pairs), simple or complex configuration data, markup code (styled text), tables, databases, etc.</p>
+                <p>A pXML document is a tree of nodes. Each node has a name, and an optional ordered list of texts (leaf nodes) and/or child-nodes (branch nodes). This simple structure allows to store any dataset of any complexity. For example, maps (key/value pairs), simple or complex configuration data, markup code (styled text), tables, databases, etc. can all be stored in pXML.</p>
 			</div>
 
 			
