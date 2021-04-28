@@ -69,6 +69,9 @@
                         <div class="pml-doc-authors">Christian Neumanns</div>
                         <time class="pml-doc-date-time" datetime="2021-04-29">2021-04-29</time>
                     </div>
+                    <figure style="text-align: center">
+                        <img alt="From XML to pXML" class="pml-image" src="images/n_v.png" width="400" />
+                    </figure>
                     <section id="ch__1" class="pml-chapter">
                         <h2 class="pml-chapter-title">Introduction</h2>
                         <p class="pml-paragraph">My previous article <a href="https://pxml-lang.github.io/docs/articles/suggestion-for-better-xml-html/index.html" class="pml-link">Suggestion For a Better XML/HTML Syntax</a> suggests a new XML/HTML syntax called <i class="pml-italic">practicalXML (<b class="pml-bold">pXML</b>)</i>. pXML is less verbose than XML, and has other advantages.</p>
@@ -454,7 +457,7 @@ XML:  &lt;ch:checks xmlns:ch=&quot;http://www.example.com&quot;&gt;
                                         <tr><td class="pml-table-body-cell">pXML</td><td class="pml-table-body-cell">pXML</td></tr>
                                     </tbody>
                                 </table>
-                                <p class="pml-paragraph">An example of each combination is included in the <a href="https://github.com/pxml-lang/java_examples/blob/main/src/main/java/dev/pxml/examples/validation/XMLSchemaValidatorExamples.java" class="pml-link">examples repo</a>.</p>
+                                <p class="pml-paragraph">An example of each combination is included in the <a href="https://github.com/pxml-lang/java_examples/tree/main/src/main/java/dev/pxml/examples/validation/XMLSchemaValidatorExamples.java" class="pml-link">examples repo</a>.</p>
                                 <p class="pml-paragraph">Class <code class="pml-inline-code">dev.pxml.core.utilities.XMLSchemaValidator</code> provides static methods to validate data. For example, validating pXML data with a pXML schema document (e.g. validate <code class="pml-inline-code">books.pxml</code> with <code class="pml-inline-code">books.pxsd</code>) can be done with the following one-liner:</p>
                                 <pre class="pml-code"><code>XMLSchemaValidator.validatePXMLFileWithPXMLSchemaFile (
     new File ( &quot;input/books.pxml&quot; ),
@@ -630,7 +633,7 @@ XML:  &lt;ch:checks xmlns:ch=&quot;http://www.example.com&quot;&gt;
                         </div>
                         <section id="ch__12" class="pml-chapter">
                             <h3 class="pml-chapter-title">Event-Based</h3>
-                            <p class="pml-paragraph">The parser is <i class="pml-italic">event-based</i>. It reads a pXML document and generates a stream of events. The parser itself doesn't do anything with the parsed data. Each type of event (e.g. <code class="pml-inline-code">onNodeStart, onNodeEnd</code>, etc.) is handled by a callback function. All callback functions are part of an events handler object. Before parsing, the client code must pass an events handler object to the parser. The events handler is an interface containing one callback function for each type of event. It is defined as <a href="https://github.com/pxml-lang/java_parser/blob/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/IParserEventsHandler.java" class="pml-link">follows</a>:</p>
+                            <p class="pml-paragraph">The parser is <i class="pml-italic">event-based</i>. It reads a pXML document and generates a stream of events. The parser itself doesn't do anything with the parsed data. Each type of event (e.g. <code class="pml-inline-code">onNodeStart, onNodeEnd</code>, etc.) is handled by a callback function. All callback functions are part of an events handler object. Before parsing, the client code must pass an events handler object to the parser. The events handler is an interface containing one callback function for each type of event. It is defined as <a href="https://github.com/pxml-lang/java_parser/tree/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/IParserEventsHandler.java" class="pml-link">follows</a>:</p>
                             <pre class="pml-code"><code>package dev.pxml.core.reader.parser.eventHandler;
 
 import dev.pxml.core.data.node.PXMLNode;
@@ -660,23 +663,23 @@ public interface IParserEventsHandler&lt;N, R&gt; {
                             <p class="pml-paragraph">The following implementations of <code class="pml-inline-code">IParserEventsHandler</code> are included in the core library:</p>
                             <ul class="pml-list">
                                 <li class="pml-list-element">
-                                    <p class="pml-paragraph"><a href="https://github.com/pxml-lang/java_parser/blob/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/CreateDOM_ParserEventHandler.java" class="pml-link">CreateDOM_ParserEventHandler</a></p>
+                                    <p class="pml-paragraph"><a href="https://github.com/pxml-lang/java_parser/tree/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/CreateDOM_ParserEventHandler.java" class="pml-link">CreateDOM_ParserEventHandler</a></p>
                                     <p class="pml-paragraph">This handler creates a standard Java <code class="pml-inline-code">org.w3c.dom.Document</code> object. It's the handler used in the previous chapter when we validated or transformed a pXML document.</p>
                                 </li>
                                 <li class="pml-list-element">
-                                    <p class="pml-paragraph"><a href="https://github.com/pxml-lang/java_parser/blob/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/CreateAST_ParserEventHandler.java" class="pml-link">CreateAST_ParserEventHandler</a></p>
+                                    <p class="pml-paragraph"><a href="https://github.com/pxml-lang/java_parser/tree/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/CreateAST_ParserEventHandler.java" class="pml-link">CreateAST_ParserEventHandler</a></p>
                                     <p class="pml-paragraph">Besides creating a <code class="pml-inline-code">Document</code> object, we can create a pXML specific AST with this handler. The end result is a <a href="https://pxml-lang.github.io/docs/api/javadoc/dev/pxml/core/data/node/PXMLNode.html" class="pml-link">PXMLNode</a>.</p>
                                 </li>
                                 <li class="pml-list-element">
-                                    <p class="pml-paragraph"><a href="https://github.com/pxml-lang/java_parser/blob/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/WriteXML_ParserEventHandler.java" class="pml-link">WriteXML_ParserEventHandler</a></p>
+                                    <p class="pml-paragraph"><a href="https://github.com/pxml-lang/java_parser/tree/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/WriteXML_ParserEventHandler.java" class="pml-link">WriteXML_ParserEventHandler</a></p>
                                     <p class="pml-paragraph">If we just need to convert pXML to XML then the most efficient way is to use this handler. Instead of loading the whole pXML document into an internal tree structure, each item (name, attribute, text, etc.) is immediately written to a Java <code class="pml-inline-code">Writer</code>, as soon as it is parsed. Hence, very large documents can be converted quickly and without eating up internal memory.</p>
                                 </li>
                                 <li class="pml-list-element">
-                                    <p class="pml-paragraph"><a href="https://github.com/pxml-lang/java_parser/blob/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/Logger_ParserEventHandler.java" class="pml-link">Logger_ParserEventHandler</a></p>
+                                    <p class="pml-paragraph"><a href="https://github.com/pxml-lang/java_parser/tree/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/Logger_ParserEventHandler.java" class="pml-link">Logger_ParserEventHandler</a></p>
                                     <p class="pml-paragraph">This is a utility handler that writes logging data to a Java <code class="pml-inline-code">Writer</code> (default is standard OS out device). Can be used for debugging purposes.</p>
                                 </li>
                                 <li class="pml-list-element">
-                                    <p class="pml-paragraph"><a href="https://github.com/pxml-lang/java_parser/blob/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/DoNothing_ParserEventHandler.java" class="pml-link">DoNothing_ParserEventHandler</a></p>
+                                    <p class="pml-paragraph"><a href="https://github.com/pxml-lang/java_parser/tree/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/DoNothing_ParserEventHandler.java" class="pml-link">DoNothing_ParserEventHandler</a></p>
                                     <p class="pml-paragraph">As the name suggest, this handler doesn't do anything. It's useful in these cases:</p>
                                     <ul class="pml-list">
                                         <li class="pml-list-element">
@@ -688,15 +691,15 @@ public interface IParserEventsHandler&lt;N, R&gt; {
                                     </ul>
                                 </li>
                                 <li class="pml-list-element">
-                                    <p class="pml-paragraph"><a href="https://github.com/pxml-lang/java_parser/blob/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/Timer_ParserEventHandler.java" class="pml-link">Timer_ParserEventHandler</a></p>
+                                    <p class="pml-paragraph"><a href="https://github.com/pxml-lang/java_parser/tree/main/src/main/java/dev/pxml/core/reader/parser/eventHandler/Timer_ParserEventHandler.java" class="pml-link">Timer_ParserEventHandler</a></p>
                                     <p class="pml-paragraph">This events handler inherits from <code class="pml-inline-code">DoNothing_ParserEventHandler</code>, and overwrites functions <code class="pml-inline-code">onStart</code> and <code class="pml-inline-code">onEnd</code> to measure the total parsing time.</p>
                                 </li>
                             </ul>
                         </section>
                         <section id="ch__13" class="pml-chapter">
                             <h3 class="pml-chapter-title">Customized Parsing</h3>
-                            <p class="pml-paragraph">If none of the above handlers suits your needs, you can create your own customized events handler by creating a class that implements <code class="pml-inline-code">IParserEventsHandler</code>, and pass it to a <a href="https://github.com/pxml-lang/java_parser/blob/main/src/main/java/dev/pxml/core/reader/parser/EventStreamParser.java" class="pml-link">parser</a> that implements <a href="https://github.com/pxml-lang/java_parser/blob/main/src/main/java/dev/pxml/core/reader/parser/AEventStreamParser.java" class="pml-link">AEventStreamParser</a>. To get started you can have a look at the implementations mentioned in the previous chapter.</p>
-                            <p class="pml-paragraph">A parser uses an <a href="https://github.com/pxml-lang/java_parser/blob/main/src/main/java/dev/pxml/core/reader/tokenizer/ITokenizer.java" class="pml-link">ITokenizer</a> to read pXML tokens (name, text, comment, etc.). For maximum customization, you could provide your own tokenizer and/or parser and use it with pXML's core library.</p>
+                            <p class="pml-paragraph">If none of the above handlers suits your needs, you can create your own customized events handler by creating a class that implements <code class="pml-inline-code">IParserEventsHandler</code>, and pass it to a <a href="https://github.com/pxml-lang/java_parser/tree/main/src/main/java/dev/pxml/core/reader/parser/EventStreamParser.java" class="pml-link">parser</a> that implements <a href="https://github.com/pxml-lang/java_parser/tree/main/src/main/java/dev/pxml/core/reader/parser/AEventStreamParser.java" class="pml-link">AEventStreamParser</a>. To get started you can have a look at the implementations mentioned in the previous chapter.</p>
+                            <p class="pml-paragraph">A parser uses an <a href="https://github.com/pxml-lang/java_parser/tree/main/src/main/java/dev/pxml/core/reader/tokenizer/ITokenizer.java" class="pml-link">ITokenizer</a> to read pXML tokens (name, text, comment, etc.). For maximum customization, you could provide your own tokenizer and/or parser and use it with pXML's core library.</p>
                         </section>
                         <section id="ch__14" class="pml-chapter">
                             <h3 class="pml-chapter-title">Parser Properties And Features</h3>
