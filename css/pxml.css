@@ -42,7 +42,7 @@ body {
 }
 
 #header {
-    background-image: url("../images/PML_plane_200_200.png");
+    /* background-image: url("../images/PML_plane_200_200.png"); */
     background-repeat: no-repeat;
     background-size: 70px 70px;
     background-position: 10px 10px; 
