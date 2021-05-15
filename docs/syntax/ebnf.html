@@ -81,7 +81,7 @@
                         <tr><td>element</td>           <td>::=</td> <td>&nbsp;&nbsp;empty_element<br />| non_empty_element</td><td></td></tr>
                         <tr><td>empty_element</td>     <td>::=</td> <td>"[" name "]"</td><td>[map]</td></tr>
                         <tr><td>non_empty_element</td> <td>::=</td> <td>"[" name " " value "]"</td><td>[teacher Bob]<br />[div A [i nice] dog]</td></tr>
-                        <tr><td>name</td>              <td>::=</td> <td>regex:<br />[a-zA-Z][a-zA-Z0-9-_.]*</td><td>index<br />Index_12<br />INDEX_12.5-a</td></tr>
+                        <tr><td>name</td>              <td>::=</td> <td>regex:<br />[a-zA-Z_][a-zA-Z0-9_-.]*</td><td>index<br />Index_12<br />_INDEX_12.5-a</td></tr>
                         <tr><td>value</td>             <td>::=</td> <td>( text | element ) +</td><td>Tree<br />[list]<br />[color orange]<br />All is [i [b very] well]!</td></tr>
                         <tr><td>text</td>              <td>::=</td> <td>character +</td><td>abc<br />3.14<br />config.\["port"\]</td></tr>
                         <tr><td>character</td>         <td>::=</td> <td>&nbsp;&nbsp;any Unicode character,<br />&nbsp;&nbsp;except "[", "]", and "\"<br />| "\["<br />| "\]"<br />| "\\"<br />| "\u" hex hex hex hex</td><td>a<br />é<br />\[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;([)<br />\]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(])<br />\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(\)<br />\u002A&nbsp;&nbsp;&nbsp;&nbsp;(*)</td></tr>
